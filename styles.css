@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Astro';
+  src: url('Astro.ttf') format('truetype');
+}
+
+body {
+  background: #aaa;
+}
+
+svg {
+  /* width: 100%; */
+  width: 800px;
+  border: 1px solid black;
+}
+
+svg text {
+  font-family: 'Astro';
+  font-size: 72px;
+  fill: white;
+}
+
+svg a {
+  cursor: pointer;
+}
+
+.coords {
+  stroke: gray;
+}
+
+.coords-text {
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+[id$="triangle"] {
+  stroke: white;
+  stroke-width: 0.01px;
+}
+[id$="label"] {
+  fill: none;
+  stroke: white;
+  stroke-width: 0.83px;
+}
+[id$="group"]:hover {
+  opacity: 0.2;
+}
+
+[id^="car"] {
+  fill: rgb(204,0,0);
+  stroke: white;
+}
+
+[id^="fix"] {
+  fill: rgb(102,102,255);
+  stroke: white;
+}
+
+[id^="mut"] {
+  fill: rgb(0,153,0);
+  stroke: white;
+}
+
+
+/* dump? */
+[id$="line"] {
+  fill: none;
+  stroke: white;
+}
+[id$="circle"] {
+  fill: none;
+  stroke: white;
+  stroke-width: 0.83px;
+}
