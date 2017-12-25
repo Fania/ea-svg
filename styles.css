@@ -1,7 +1,15 @@
 @font-face {
+  font-family: "Astro";
+  src: url("fonts/Astro.woff"),
+       url("fonts/Astro.ttf");
+  /* font-weight: normal; */
+  /* font-style: normal; */
+}
+
+/* @font-face {
   font-family: 'Astro';
   src: url('Astro.ttf') format('truetype');
-}
+} */
 
 body {
   background: #aaa;
@@ -21,6 +29,7 @@ svg text {
   font-family: 'Astro';
   font-size: 72px;
   fill: white;
+  stroke: none;
 }
 
 svg a {
@@ -38,6 +47,7 @@ svg a {
 
 [id$="triangle"] {
   stroke: white;
+  /* comment out stroke when polygons dome */
   stroke-width: 0.01px;
 }
 [id$="label"] {
@@ -46,7 +56,7 @@ svg a {
   stroke-width: 0.83px;
 }
 [id$="group"]:hover {
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 [id^="car"] {
@@ -63,6 +73,27 @@ svg a {
   fill: rgb(0,153,0);
   stroke: white;
 }
+
+#radial-1 stop:first-child { stop-color:rgb(255,153,51); }
+#radial-1 stop:last-child  { stop-color:rgb(204,0,0); }
+
+#radial-2 stop:first-child { stop-color:rgb(102,51,102); }
+#radial-2 stop:last-child  { stop-color:rgb(102,102,255); }
+
+#radial-3 stop:first-child { stop-color:black; }
+#radial-3 stop:last-child  { stop-color:rgb(0,153,0); }
+
+#radial-4 stop:first-child { stop-color:rgb(255,255,51); }
+#radial-4 stop:last-child  { stop-color:rgb(200,180,100); }
+
+#radial-5 stop:first-child { stop-color:rgb(255,204,0); }
+#radial-5 stop:last-child  { stop-color:rgb(0,51,102); }
+
+#radial-6 stop:first-child { stop-color:rgb(255,160,160); }
+#radial-6 stop:last-child  { stop-color:rgb(255,0,0); }
+
+#radial-7 stop:first-child { stop-color:rgb(102,0,102); }
+#radial-7 stop:last-child  { stop-color:rgb(255,255,255); }
 
 
 /* dump? */

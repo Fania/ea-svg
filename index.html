@@ -9,19 +9,25 @@
 </head>
 <body>
 
-<form id="choices">
-  <input id="rays-button" type="radio" class="choice" value="male" checked>
+<form id="choices" name="choices">
+<fieldset data-role="controlgroup">
+  <legend>Map options:</legend>
+
+  <input type="radio" name="mapChoice" id="rays-button" value="choice-1" checked="checked">
   <label for="rays-button">Seven rays</label>
-  <input id="planets-button" type="radio" class="choice" value="female">
+
+  <input type="radio" name="mapChoice" id="planets-button" value="choice-2">
   <label for="planets-button">Sacred planets</label>
-  <input id="nonsacred-button" type="radio" class="choice" value="other">
+
+  <input type="radio" name="mapChoice" id="nonsacred-button" value="choice-3">
   <label for="nonsacred-button">Non-sacred planets</label>
+</fieldset>
 </form>
 
 <br>
 
 <svg viewBox="0 0 841 595">
-<!-- 
+
 <line class="coords" x1="100" y1="0" x2="100" y2="600"/>
 <line class="coords" x1="200" y1="0" x2="200" y2="600"/>
 <line class="coords" x1="300" y1="0" x2="300" y2="600"/>
@@ -65,15 +71,16 @@
 <text class="coords-text" x="810" y="205">200</text>
 <text class="coords-text" x="810" y="305">300</text>
 <text class="coords-text" x="810" y="405">400</text>
-<text class="coords-text" x="810" y="505">500</text> -->
+<text class="coords-text" x="810" y="505">500</text>
 
 
   <g id="triangles">
 
     <a id="ray-1-group" href="http://esotericastrology.org/rays/ray1/">
-      <g id="ray-1-triangle" transform="matrix(93.2497,0,0,-93.2497,263.376,340.064)">
+      <!-- <g id="ray-1-triangle" transform="matrix(93.2497,0,0,-93.2497,263.376,340.064)">
         <path d="M -0.013,-0.53 L 0.899,0.99 L -0.925,0.99 L -0.013,-0.53 Z" style="fill:url(#radial-1);"/>
-      </g>
+      </g> -->
+      <polygon id="ray-1-triangle" points="177,247 349,247 263,390" style="fill:url(#radial-1);"/>
       <g id="ray-1-label">
         <line x1="178" y1="248" x2="233" y2="278"/>
         <circle cx="262.202" cy="297.639" r="35.432"/>
@@ -149,7 +156,8 @@
         <circle cx="177.164" cy="340" r="35.432"/>
       </g>
     </a>
-  </g> <!--triangles -->
+  </g>
+  <!--triangles -->
   
   <g id="circles">
     <g id="car-cap">
@@ -202,16 +210,38 @@
       <circle cx="772.439" cy="106.026" r="35.431"/>
       <text x="746.453px" y="130.455px">c</text>
     </g>
-  </g> <!-- circles -->
+  </g>
+  <!-- circles -->
 
   <defs>
-    <radialGradient id="radial-7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,-0.424413)"><stop offset="0" style="stop-color:rgb(102,0,102);stop-opacity:1"/><stop offset="1" style="stop-color:white;stop-opacity:1"/></radialGradient>
-    <radialGradient id="radial-3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,0.424415)"><stop offset="0" style="stop-color:rgb(0,153,0);stop-opacity:1"/><stop offset="1" style="stop-color:black;stop-opacity:1"/></radialGradient>
-    <radialGradient id="radial-1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,0.459849)"><stop offset="0" style="stop-color:rgb(204,0,0);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(255,153,51);stop-opacity:1"/></radialGradient>
-    <radialGradient id="radial-5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,-0.459851)"><stop offset="0" style="stop-color:rgb(255,204,0);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,51,102);stop-opacity:1"/></radialGradient>
-    <radialGradient id="radial-4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,-0.528262)"><stop offset="0" style="stop-color:rgb(255,255,51);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(200,180,100);stop-opacity:1"/></radialGradient>
-    <radialGradient id="radial-6" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,-0.459851)"><stop offset="0" style="stop-color:rgb(255,153,153);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(255,0,0);stop-opacity:1"/></radialGradient>
-    <radialGradient id="radial-2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,0.459855)"><stop offset="0" style="stop-color:rgb(102,51,102);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(102,102,255);stop-opacity:1"/></radialGradient>
+    <radialGradient id="radial-1" cx="50%" cy="38%" r="50%">
+      <stop offset = "0"/>
+      <stop offset = "1"/>
+    </radialGradient>
+    <radialGradient id="radial-2" cx="50%" cy="62%" r="60%">
+      <stop offset = "0"/>
+      <stop offset = "1"/>
+    </radialGradient>
+    <radialGradient id="radial-3" cx="50%" cy="62%" r="50%">
+      <stop offset = "0"/>
+      <stop offset = "1"/>
+    </radialGradient>
+    <radialGradient id="radial-4" cx="50%" cy="38%" r="50%">
+      <stop offset = "0"/>
+      <stop offset = "1"/>
+    </radialGradient>
+    <radialGradient id="radial-5" cx="50%" cy="38%" r="50%">
+      <stop offset = "0"/>
+      <stop offset = "1"/>
+    </radialGradient>
+    <radialGradient id="radial-6" cx="50%" cy="38%" r="50%">
+      <stop offset = "0"/>
+      <stop offset = "1"/>
+    </radialGradient>
+    <radialGradient id="radial-7" cx="50%" cy="38%" r="50%">
+      <stop offset = "0"/>
+      <stop offset = "1"/>
+    </radialGradient>
   </defs>
 </svg>
 
