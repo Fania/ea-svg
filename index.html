@@ -8,7 +8,18 @@
 
 </head>
 <body>
-  
+
+<form id="choices">
+  <input id="rays-button" type="radio" class="choice" value="male" checked>
+  <label for="rays-button">Seven rays</label>
+  <input id="planets-button" type="radio" class="choice" value="female">
+  <label for="planets-button">Sacred planets</label>
+  <input id="nonsacred-button" type="radio" class="choice" value="other">
+  <label for="nonsacred-button">Non-sacred planets</label>
+</form>
+
+<br>
+
 <svg viewBox="0 0 841 595">
 <!-- 
 <line class="coords" x1="100" y1="0" x2="100" y2="600"/>
@@ -87,7 +98,9 @@
       </g>
       <g id="ray-3-label">
         <line x1="93" y1="390" x2="147" y2="421"/>
-        <text x="159.827" y="462.551">3</text>
+        <text class="number" x="159.827" y="462.551">3</text>
+        <text class="planet" x="159.827" y="462.551">G</text>
+        <text class="nonsacred" x="159.827" y="462.551">W</text>
         <circle cx="177" cy="439" r="35.432"/>
       </g>
     </a>
@@ -203,6 +216,6 @@
 </svg>
 
 
-
+<script src="scripts.js"></script>
 </body>
 </html>

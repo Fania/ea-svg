@@ -7,6 +7,10 @@ body {
   background: #aaa;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 svg {
   /* width: 100%; */
   width: 800px;
