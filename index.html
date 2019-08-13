@@ -26,35 +26,31 @@
 
 <br>
 
-<svg id="playground" viewbox="-50 -50 100 100">
+<svg id="playground" viewbox="0 0 200 200">
 
-<line class="coords" x1="-25" y1="-50" x2="-25" y2="50"/>
-<line class="coords" x1="0" y1="-50" x2="0" y2="50"/>
-<line class="coords" x1="25" y1="-50" x2="25" y2="50"/>
+  <defs>
+    <g id="equilateral">
+      <circle cx="100" cy="100" r="100" stroke="black" fill="transparent" />
+      <!-- <polygon points="200,50 70,275 330,275" stroke="black" fill="yellow" /> -->
 
-<line class="coords" x1="-50" y1="-25" x2="50" y2="-25"/>
-<line class="coords" x1="-50" y1="0" x2="50" y2="0"/>
-<line class="coords" x1="-50" y1="25" x2="50" y2="25"/>
+      <!-- <polygon points="86.6 150, 173.2 0, 0 0" style="fill:url(#radial-2);"/> -->
+      <!-- <polygon points="177,247 349,247 263,390" style="fill:url(#radial-1);"/> -->
+      <!-- <polygon points="86.6 150, 173.2 0, 0 0" style="fill:url(#radial-2);"/> -->
+      <polygon points="100 200, 186.6 50, 13.4 50" style="fill:url(#radial-2);"/>
+      <!-- <path d="M 10 10 H 90 V 90 H 10 Z" fill="transparent" stroke="black"/> -->
 
-<defs>
-  <polygon id="triangle" points="-25,-25 25,-25 0,15"/>
-  <polygon id="triangle2" points="0,0 50,0 25,40" transform="rotate(90 25 20)"/>
-</defs>
+    </g>
+  </defs>
 
-<use href="#triangle" x="0" y="0" fill="red"/>
-<use href="#triangle" x="0" y="0" transform="rotate(90 0 -10)"/>
-<use href="#triangle" x="25" y="25" transform="rotate(180 0 -10)" fill="green"/>
-
-<use href="#triangle2" x="0" y="0" fill="blue"/>
-
+  <use href="#equilateral" x="0" y="0" />
+  <use href="#equilateral" x="0" y="0" transform="rotate(60 100 100)"/>
+  <use href="#equilateral" x="90" y="-50" />
 
 <!-- 
 - define element according  to its own coords
 - remember center coords of element for transform
 - use element elsewhere with original center rotation
 - move element with x and y (these are rotated as well! so negate them)
-
-
  -->
 
 </svg>
@@ -111,17 +107,31 @@
 
   <g id="triangles">
 
+    <!-- <polygon id="ray-1-triangle" points="177,247 349,247 263,390" style="fill:url(#radial-1);"/> -->
+
+    <!-- <g id="ray-1-group">
+      <circle cx="200" cy="200" r="150" stroke="transparent" fill="transparent" />
+      <a href="http://esotericastrology.org/rays/ray1/">
+        <polygon id="ray-1-triangle" points="200,50 70,275 330,275" stroke="black" fill="yellow" />
+        <g id="ray-1-label">
+          <line x1="178" y1="248" x2="233" y2="278"/>
+          <circle cx="262.202" cy="297.639" r="35.432"/>
+          <text x="244.378" y="320.344">1</text>
+        </g>
+      </a>
+    </g> -->
+
     <a id="ray-1-group" href="http://esotericastrology.org/rays/ray1/">
-      <!-- <g id="ray-1-triangle" transform="matrix(93.2497,0,0,-93.2497,263.376,340.064)">
-        <path d="M -0.013,-0.53 L 0.899,0.99 L -0.925,0.99 L -0.013,-0.53 Z" style="fill:url(#radial-1);"/>
-      </g> -->
-      <polygon id="ray-1-triangle" points="177,247 349,247 263,390" style="fill:url(#radial-1);"/>
+      <polygon id="ray-1-triangle" points="200,50 70,275 330,275" stroke="black" fill="yellow" transform="rotate(60 200 200)"/>
+      <!-- <polygon id="ray-1-triangle" points="177,247 349,247 263,390" style="fill:url(#radial-1);"/> -->
+      <!-- <circle cx="200" cy="200" r="150" stroke="transparent" fill="transparent" /> -->
       <g id="ray-1-label">
         <line x1="178" y1="248" x2="233" y2="278"/>
         <circle cx="262.202" cy="297.639" r="35.432"/>
         <text x="244.378" y="320.344">1</text>
       </g>
     </a>
+  
 
     <a id="ray-2-group" href="http://esotericastrology.org/rays/ray2/">
       <g id="ray-2-triangle" transform="matrix(93.2504,0,0,-93.2504,686.225,198.333)">
@@ -249,33 +259,30 @@
   <!-- circles -->
 
   <defs>
+    <!-- <g id="equilateral">
+      <circle cx="200" cy="200" r="150" stroke="transparent" fill="transparent" />
+      <polygon points="200,50 70,275 330,275" stroke="black" fill="yellow" />
+    </g> -->
     <radialGradient id="radial-1" cx="50%" cy="38%" r="50%">
-      <stop offset = "0"/>
-      <stop offset = "1"/>
+      <stop offset = "0"/> <stop offset = "1"/>
     </radialGradient>
     <radialGradient id="radial-2" cx="50%" cy="62%" r="60%">
-      <stop offset = "0"/>
-      <stop offset = "1"/>
+      <stop offset = "0"/> <stop offset = "1"/>
     </radialGradient>
     <radialGradient id="radial-3" cx="50%" cy="62%" r="50%">
-      <stop offset = "0"/>
-      <stop offset = "1"/>
+      <stop offset = "0"/> <stop offset = "1"/>
     </radialGradient>
     <radialGradient id="radial-4" cx="50%" cy="38%" r="50%">
-      <stop offset = "0"/>
-      <stop offset = "1"/>
+      <stop offset = "0"/> <stop offset = "1"/>
     </radialGradient>
     <radialGradient id="radial-5" cx="50%" cy="38%" r="50%">
-      <stop offset = "0"/>
-      <stop offset = "1"/>
+      <stop offset = "0"/> <stop offset = "1"/>
     </radialGradient>
     <radialGradient id="radial-6" cx="50%" cy="38%" r="50%">
-      <stop offset = "0"/>
-      <stop offset = "1"/>
+      <stop offset = "0"/> <stop offset = "1"/>
     </radialGradient>
     <radialGradient id="radial-7" cx="50%" cy="38%" r="50%">
-      <stop offset = "0"/>
-      <stop offset = "1"/>
+      <stop offset = "0"/> <stop offset = "1"/>
     </radialGradient>
   </defs>
 </svg>
