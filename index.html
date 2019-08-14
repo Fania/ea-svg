@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EA-SVG</title>
+  <link rel="stylesheet" href="hermetica.css">
   <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -29,16 +30,18 @@
 <svg id="playground" viewbox="0 0 200 200">
 
   <defs>
+    <!--
+    equilateral triangle
+    outer circle radius 100
+    triangle side 173.2
+    surrounding box width/height 200
+    triangle flat edge to circle 50
+    flat edge points to edge of of
+    -->
     <g id="equilateral">
+      <rect fill="#000" fill-opacity="0.4" width="200" height="200" />
       <circle cx="100" cy="100" r="100" stroke="black" fill="transparent" />
-      <!-- <polygon points="200,50 70,275 330,275" stroke="black" fill="yellow" /> -->
-
-      <!-- <polygon points="86.6 150, 173.2 0, 0 0" style="fill:url(#radial-2);"/> -->
-      <!-- <polygon points="177,247 349,247 263,390" style="fill:url(#radial-1);"/> -->
-      <!-- <polygon points="86.6 150, 173.2 0, 0 0" style="fill:url(#radial-2);"/> -->
-      <polygon points="100 200, 186.6 50, 13.4 50" style="fill:url(#radial-2);"/>
-      <!-- <path d="M 10 10 H 90 V 90 H 10 Z" fill="transparent" stroke="black"/> -->
-
+      <polygon points="100 200, 186.6 50, 13.4 50" fill="url(#radial)" />
     </g>
   </defs>
 
@@ -55,6 +58,98 @@
 
 </svg>
 
+<span class="hermetica-A007-scorpio"></span>
+
+<br>
+
+
+
+
+
+<svg viewBox="0 0 841 595">
+
+<line class="coords" x1="100" y1="0" x2="100" y2="600"/>
+<line class="coords" x1="200" y1="0" x2="200" y2="600"/>
+<line class="coords" x1="300" y1="0" x2="300" y2="600"/>
+<line class="coords" x1="400" y1="0" x2="400" y2="600"/>
+<line class="coords" x1="500" y1="0" x2="500" y2="600"/>
+<line class="coords" x1="600" y1="0" x2="600" y2="600"/>
+<line class="coords" x1="700" y1="0" x2="700" y2="600"/>
+<line class="coords" x1="800" y1="0" x2="800" y2="600"/>
+
+<line class="coords" x1="0" y1="100" x2="840" y2="100"/>
+<line class="coords" x1="0" y1="200" x2="840" y2="200"/>
+<line class="coords" x1="0" y1="300" x2="840" y2="300"/>
+<line class="coords" x1="0" y1="400" x2="840" y2="400"/>
+<line class="coords" x1="0" y1="500" x2="840" y2="500"/>
+
+<text class="coords-text" x="90"  y="20">100</text>
+<text class="coords-text" x="190" y="20">200</text>
+<text class="coords-text" x="290" y="20">300</text>
+<text class="coords-text" x="390" y="20">400</text>
+<text class="coords-text" x="490" y="20">500</text>
+<text class="coords-text" x="590" y="20">600</text>
+<text class="coords-text" x="690" y="20">700</text>
+<text class="coords-text" x="790" y="20">800</text>
+
+<text class="coords-text" x="90"  y="590">100</text>
+<text class="coords-text" x="190" y="590">200</text>
+<text class="coords-text" x="290" y="590">300</text>
+<text class="coords-text" x="390" y="590">400</text>
+<text class="coords-text" x="490" y="590">500</text>
+<text class="coords-text" x="590" y="590">600</text>
+<text class="coords-text" x="690" y="590">700</text>
+<text class="coords-text" x="790" y="590">800</text>
+
+<text class="coords-text" x="5" y="105">100</text>
+<text class="coords-text" x="5" y="205">200</text>
+<text class="coords-text" x="5" y="305">300</text>
+<text class="coords-text" x="5" y="405">400</text>
+<text class="coords-text" x="5" y="505">500</text>
+
+<text class="coords-text" x="810" y="105">100</text>
+<text class="coords-text" x="810" y="205">200</text>
+<text class="coords-text" x="810" y="305">300</text>
+<text class="coords-text" x="810" y="405">400</text>
+<text class="coords-text" x="810" y="505">500</text>
+
+
+  <g id="triangles">
+    <a id="ray-1-group" href="http://esotericastrology.org/rays/ray1/">
+      <!-- <polygon id="ray-1-triangle" points="200,50 70,275 330,275" stroke="black" fill="yellow" transform="rotate(60 200 200)"/> -->
+      <!-- <polygon id="ray-1-triangle" points="177,247 349,247 263,390" style="fill:url(#radial-1);"/> -->
+      <!-- <circle cx="200" cy="200" r="150" stroke="transparent" fill="transparent" /> -->
+      <use href="#equilateral" x="275" y="290" />
+
+      <g id="ray-1-label">
+        <line x1="178" y1="248" x2="233" y2="278"/>
+        <circle cx="262.202" cy="297.639" r="35.432"/>
+        <text x="244.378" y="320.344">1</text>
+      </g>
+    </a>
+  </g>
+  <!--triangles -->
+  
+  <g id="circles">
+    <g id="car-cap">
+      <circle cx="262.203" cy="389.489" r="35.432"/>
+      <text x="236.562px" y="414.112px">j</text>
+    </g>
+  </g>
+
+  <defs>
+    <!-- <g id="equilateral">
+      <circle cx="200" cy="200" r="150" stroke="transparent" fill="transparent" />
+      <polygon points="200,50 70,275 330,275" stroke="black" fill="yellow" />
+    </g> -->
+    <radialGradient id="radial" cx="50%" cy="40%" r="50%">
+      <stop offset = "0"/> <stop offset = "1"/>
+    </radialGradient>
+  </defs>
+</svg>
+
+
+<br>
 
 
 <svg viewBox="0 0 841 595">
@@ -122,9 +217,11 @@
     </g> -->
 
     <a id="ray-1-group" href="http://esotericastrology.org/rays/ray1/">
-      <polygon id="ray-1-triangle" points="200,50 70,275 330,275" stroke="black" fill="yellow" transform="rotate(60 200 200)"/>
+      <!-- <polygon id="ray-1-triangle" points="200,50 70,275 330,275" stroke="black" fill="yellow" transform="rotate(60 200 200)"/> -->
       <!-- <polygon id="ray-1-triangle" points="177,247 349,247 263,390" style="fill:url(#radial-1);"/> -->
       <!-- <circle cx="200" cy="200" r="150" stroke="transparent" fill="transparent" /> -->
+      <use href="#equilateral" x="275" y="290" />
+
       <g id="ray-1-label">
         <line x1="178" y1="248" x2="233" y2="278"/>
         <circle cx="262.202" cy="297.639" r="35.432"/>
@@ -263,6 +360,9 @@
       <circle cx="200" cy="200" r="150" stroke="transparent" fill="transparent" />
       <polygon points="200,50 70,275 330,275" stroke="black" fill="yellow" />
     </g> -->
+    <radialGradient id="radial" cx="50%" cy="40%" r="50%">
+      <stop offset = "0"/> <stop offset = "1"/>
+    </radialGradient>
     <radialGradient id="radial-1" cx="50%" cy="38%" r="50%">
       <stop offset = "0"/> <stop offset = "1"/>
     </radialGradient>

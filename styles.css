@@ -11,6 +11,11 @@
   src: url('Astro.ttf') format('truetype');
 } */
 
+[class^="hermetica-"], [class*=" hermetica-"] {
+  color: black;
+  font-size: 3em;
+}
+
 body {
   background: #aaa;
 }
@@ -79,6 +84,9 @@ svg a {
   fill: rgb(0,153,0);
   stroke: white;
 }
+
+#radial stop:first-child { stop-color:rgb(255,153,51); }
+#radial stop:last-child  { stop-color:rgb(204,0,0); }
 
 #radial-1 stop:first-child { stop-color:rgb(255,153,51); }
 #radial-1 stop:last-child  { stop-color:rgb(204,0,0); }
