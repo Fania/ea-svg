@@ -43,17 +43,9 @@ svg text {
   stroke: none;
   text-anchor: middle;
 }
-[class$="text"] {
-  display: none;
-}
-[class$="text-vert"] {
-  display: block;
-  dominant-baseline: central;
-}
 svg a {
   cursor: pointer;
 }
-
 .coords {
   stroke: gray;
 }
@@ -133,4 +125,9 @@ svg a {
   [class$="text-vert"] {
     display: none;
   }
+
+  #capricorn {
+    transform: rotate(0deg);
+  }
+
 }
