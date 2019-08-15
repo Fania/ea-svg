@@ -12,17 +12,12 @@ screenTest(mql);
 
 
 
-// let raysButton = document.getElementById("rays-button");
-// let planetsButton = document.getElementById("planets-button");
-// let nonsacredsButton = document.getElementById("nonsacred-button");
-
 // needs same origin so run local web server
 // needs to be run after page has finished loading
+// see https://svgontheweb.com/#javascript
 window.onload = () => {
   const obje = document.getElementById("diagram");
   const svgDoc = obje.contentDocument;
-  console.log(svgDoc);
-  // svgDoc.querySelector("[class*='sun']").setAttribute("fill", "black");
   svgDoc.querySelector("[class*='sun']").style.fill = "yellow";
 };
 
