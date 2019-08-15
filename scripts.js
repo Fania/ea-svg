@@ -1,9 +1,11 @@
+
+// responsive svg display
 const dia = document.getElementById("diagram");
 const mql = window.matchMedia('(min-width: 600px)');
 function screenTest(e) {
   const size = e.matches ? 'desktop' : 'mobile';
   console.log(size);
-  dia.src = e.matches ? "horizontal.svg" : "vertical.svg";
+  dia.data = e.matches ? "horizontal.svg" : "vertical.svg";
 }
 mql.addListener(screenTest);
 screenTest(mql);
@@ -14,29 +16,61 @@ screenTest(mql);
 // let planetsButton = document.getElementById("planets-button");
 // let nonsacredsButton = document.getElementById("nonsacred-button");
 
-// let rays = document.getElementsByClassName("ray");
-// let planets = document.getElementsByClassName("planet");
-// let nonsacreds = document.getElementsByClassName("nonsacred");
+// needs same origin so run local web server
+// needs to be run after page has finished loading
+window.onload = () => {
+  const obje = document.getElementById("diagram");
+  const svgDoc = obje.contentDocument;
+  console.log(svgDoc);
+  // svgDoc.querySelector("[class*='sun']").setAttribute("fill", "black");
+  svgDoc.querySelector("[class*='sun']").style.fill = "yellow";
+};
 
-// let choicesForm = document.getElementById("choices");
-// let radios = document.getElementsByClassName("choice");
 
-// radios.addEventListener("change", function(){
-//   console.log("changed");
-// });
+let rays = document.querySelectorAll("[class*='text']");
+let planets = document.querySelectorAll("[class*='sacred']");
+let nonsacreds = document.querySelectorAll("[class*='non']");
 
-let rad = document.choices.mapChoice;
-console.log(rad);
-var prev = null;
-for(var i = 0; i < rad.length; i++) {
-  rad[i].onchange = function() {
-    (prev)? console.log(prev.value):null;
-    if(this !== prev) {
-      prev = this;
-    }
-    console.log(this.value)
-  };
-}
+// console.log(rays);
+// console.log(planets);
+// console.log(nonsacreds);
+
+// const choicesForm = document.getElementById("choices");
+// const radios = document.getElementsByClassName("mapChoice");
+
+// for (r in radios) {
+//   radios[r].addEventListener("change", () => {
+//     console.log("changed");
+//   });
+// }
+
+
+
+const rad = document.choices.mapChoice;
+// console.log(rad);
+// console.log(rad.length);
+
+[...rad].forEach(r => {
+  // console.log(r);
+  r.addEventListener("change", () => {
+    console.log("changed");
+    
+  });
+});
+
+
+
+
+// var prev = null;
+// for(var i = 0; i < rad.length; i++) {
+//   rad[i].onchange = function() {
+//     (prev)? console.log(prev.value):null;
+//     if(this !== prev) {
+//       prev = this;
+//     }
+//     console.log(this.value)
+//   };
+// }
 
 
 // if (raysButton.checked) {

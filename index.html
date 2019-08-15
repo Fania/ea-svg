@@ -6,7 +6,7 @@
   <title>EA-SVG</title>
   <link rel="stylesheet" href="hermetica.css">
   <link rel="stylesheet" href="styles.css">
-
+  <base target="_parent">
 </head>
 <body>
 
@@ -27,8 +27,24 @@
 
 <br>
 
+<p class="astro">abcdefghijklmnopqrstuvwxyz1234567890</p>
+<p class="astro">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
 
-<img id="diagram" src="horizontal.svg" />
+<br>
+
+
+<object id="diagram" type="image/svg+xml" data="horizontal.svg"></object>
+
+
+
+<!-- <script>
+  window.onload = function() {
+    const obje = document.getElementById("diagram");
+    const svgDoc = obje.contentDocument;
+    svgDoc.querySelector(".ray-2-non-sun").style.fill = "yellow";
+  };
+</script> -->
+
 
 
 <!-- <br>

@@ -64,7 +64,7 @@
 
 
   <!-- Ray 1 -->
-  <a id="ray-1-group" href="http://esotericastrology.org/rays/ray1/">
+  <a id="ray-1-group" href="http://esotericastrology.org/rays/ray1/" target="_parent">
     <path class="ray-1-triangle" d="M303.535,931.057l-120.336,-216.766l-127.557,220.936l247.893,-4.17Z" fill="url(#radial-1)"/>
     <g id="ray-1-label">
       <path class="ray-1-line" d="M55.642,935.227l82.189,-47.453"/>
@@ -74,7 +74,7 @@
   </a>
 
   <!-- Ray 2 -->
-  <a id="ray-2-group" href="http://esotericastrology.org/rays/ray2/">
+  <a id="ray-2-group" href="http://esotericastrology.org/rays/ray2/" target="_parent">
     <path class="ray-2-triangle" d="M438.319,272.412l-120.336,-216.768l-127.559,220.938l247.895,-4.17Z" fill="url(#radial-2)"/>
     <g id="ray-2-label">
       <path class="ray-2-line" d="M438.317,272.411l-73.651,-42.521"/>
@@ -84,7 +84,7 @@
   </a>
 
   <!-- Ray 3 -->
-  <a id="ray-3-group" href="http://esotericastrology.org/rays/ray3/">
+  <a id="ray-3-group" href="http://esotericastrology.org/rays/ray3/" target="_parent">
     <path class="ray-3-triangle" d="M423.872,1147.83l-120.337,-216.767l-127.557,220.935l247.894,-4.168Z" fill="url(#radial-3)"/>
     <g id="ray-3-label">
       <path class="ray-3-line" d="M175.979,1151.99l82.19,-47.452"/>
@@ -94,7 +94,7 @@
   </a>
 
   <!-- Ray 4 -->
-  <a id="ray-4-group" href="http://esotericastrology.org/rays/ray4/">
+  <a id="ray-4-group" href="http://esotericastrology.org/rays/ray4/" target="_parent">
     <path class="ray-4-triangle" d="M310.759,493.351l247.894,-4.171l-127.558,220.937l-120.336,-216.766Z" fill="url(#radial-4)"/>
     <g id="ray-4-label">
       <path class="ray-4-line" d="M558.653,489.18l-82.19,47.452" style="stroke-width:3px;"/>
@@ -104,7 +104,7 @@
   </a>
 
   <!-- Ray 5 -->
-  <a id="ray-5-group" href="http://esotericastrology.org/rays/ray5/">
+  <a id="ray-5-group" href="http://esotericastrology.org/rays/ray5/" target="_parent">
     <path class="ray-5-triangle" d="M62.864,497.52l247.893,-4.169l-127.557,220.937l-120.336,-216.768Z" fill="url(#radial-5)"/>
     <g id="ray-5-label">
       <path class="ray-5-line" d="M62.864,497.52l74.324,42.909"/>
@@ -115,7 +115,7 @@
   </a>
 
   <!-- Ray 6 -->
-  <a id="ray-6-group" href="http://esotericastrology.org/rays/ray6/">
+  <a id="ray-6-group" href="http://esotericastrology.org/rays/ray6/" target="_parent">
     <path class="ray-6-triangle" d="M190.422,276.582l247.895,-4.17l-127.558,220.937l-120.337,-216.767Z" fill="url(#radial-6)"/>
     <g id="ray-6-label">
       <path class="ray-6-line" d="M310.759,493.349l0,-94.906"/>
@@ -125,7 +125,7 @@
   </a>
 
   <!-- Ray 7 --> 
-  <a id="ray-7-group" href="http://esotericastrology.org/rays/ray7/">
+  <a id="ray-7-group" href="http://esotericastrology.org/rays/ray7/" target="_parent">
     <path class="ray-7-triangle" d="M55.642,935.228l247.892,-4.17l-127.557,220.936l-120.335,-216.766Z" fill="url(#radial-7)"/>
     <g id="ray-7-label">
       <path class="ray-7-line" d="M303.534,931.058l-82.19,47.452"/>

@@ -23,6 +23,12 @@ body {
 }
 
 
+.astro {
+  font-family: 'Astro';
+  font-size: 2em;
+}
+
+
 svg {
   transform: rotate(-90deg);
   width: 100vw;
@@ -43,6 +49,9 @@ svg text {
   stroke: none;
   text-anchor: middle;
 }
+
+
+
 svg a {
   cursor: pointer;
 }
@@ -89,7 +98,7 @@ svg a {
   stroke: white;
 }
 
-#radial-1 stop:first-child { stop-color:rgb(255,153,51); }
+#radial-1 stop:first-child { stop-color:rgb(255, 153, 51); }
 #radial-1 stop:last-child  { stop-color:rgb(204,0,0); }
 
 #radial-2 stop:first-child { stop-color:rgb(102,51,102); }
@@ -109,6 +118,9 @@ svg a {
 
 #radial-7 stop:first-child { stop-color:rgb(102,0,102); }
 #radial-7 stop:last-child  { stop-color:rgb(255,255,255); }
+
+
+
 
 
 @media only screen and (min-width: 600px) {
