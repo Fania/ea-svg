@@ -45,9 +45,9 @@
       stroke: white;
       stroke-width: 1.25px;
     }
-    [id$="group"]:hover {
+    <!-- [id$="group"]:hover {
       opacity: 0.5;
-    }
+    } -->
     [class^="cardinal"] {
       fill: rgb(204,0,0);
       stroke: white;
@@ -60,21 +60,6 @@
       fill: rgb(0,153,0);
       stroke: white;
     }
-    #radial-1 stop:first-child { stop-color:rgb(255,153,51); }
-    #radial-1 stop:last-child  { stop-color:rgb(204,0,0); }
-    #radial-2 stop:first-child { stop-color:rgb(102,51,102); }
-    #radial-2 stop:last-child  { stop-color:rgb(102,102,255); }
-    #radial-3 stop:first-child { stop-color:rgb(0,0,0); }
-    #radial-3 stop:last-child  { stop-color:rgb(0,153,0); }
-    #radial-4 stop:first-child { stop-color:rgb(255,255,51); }
-    #radial-4 stop:last-child  { stop-color:rgb(200,180,100); }
-    #radial-5 stop:first-child { stop-color:rgb(255,204,0); }
-    #radial-5 stop:last-child  { stop-color:rgb(0,51,102); }
-    #radial-6 stop:first-child { stop-color:rgb(255,160,160); }
-    #radial-6 stop:last-child  { stop-color:rgb(255,0,0); }
-    #radial-7 stop:first-child { stop-color:rgb(102,0,102); }
-    #radial-7 stop:last-child  { stop-color:rgb(255,255,255); }
-
     [class*="sun"] {
       stroke: none;
       fill: cyan;
@@ -126,7 +111,7 @@
 
   <!-- Ray 4 -->
   <a id="ray-4-group" href="http://esotericastrology.org/rays/ray4/" target="_parent">
-    <path class="ray-4-triangle" d="M714.285,310.759l4.171,247.894l-220.936,-127.558l216.765,-120.336Z" fill="#ffe82a"/>
+    <path class="ray-4-triangle" d="M714.285,310.759l4.171,247.894l-220.936,-127.558l216.765,-120.336Z" fill="url(#radial-4)"/>
     <g id="ray-4-label">
       <path class="ray-4-line" d="M718.456,558.653l-47.452,-82.19" style="stroke-width:3px;"/>
       <path class="ray-4-circle" d="M598.777,404.536c-14.666,25.403 -5.95,57.934 19.453,72.6c25.403,14.667 57.934,5.95 72.601,-19.453c14.666,-25.403 5.95,-57.934 -19.453,-72.601c-25.403,-14.666 -57.935,-5.949 -72.601,19.454Z" style="stroke-width:3px;"/>
@@ -177,8 +162,10 @@
   <g id="sign-nodes">
 
     <!-- capricorn -->
-    <path class="cardinal-earth" d="M303.154,257.509c25.419,14.676 34.13,47.181 19.454,72.601c-14.677,25.421 -47.182,34.129 -72.602,19.453c-25.419,-14.676 -34.13,-47.18 -19.453,-72.601c14.676,-25.42 47.181,-34.129 72.601,-19.453"/>
-    <text x="282px" y="337px">j</text>
+    <a id="sign-capricorn-group" href="http://esotericastrology.org/signs/capricorn/" target="_parent">
+      <path class="cardinal-earth" d="M303.154,257.509c25.419,14.676 34.13,47.181 19.454,72.601c-14.677,25.421 -47.182,34.129 -72.602,19.453c-25.419,-14.676 -34.13,-47.18 -19.453,-72.601c14.676,-25.42 47.181,-34.129 72.601,-19.453"/>
+      <text x="282px" y="337px">j</text>
+    </a>
     <!-- cancer -->
     <path class="cardinal-water" d="M82.216,129.951c25.419,14.676 34.129,47.18 19.453,72.599c-14.677,25.421 -47.181,34.131 -72.6,19.455c-25.42,-14.676 -34.131,-47.181 -19.454,-72.602c14.676,-25.419 47.181,-34.128 72.601,-19.452"/>
     <text x="55px" y="208px">d</text>
@@ -221,23 +208,32 @@
   
   <defs>
     <radialGradient id="radial-1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(121.135,69.9373,-69.9373,121.135,347.334,184.507)">
-      <stop offset="0"/> <stop offset="1"/>
+      <stop offset="0" style="stop-color:#c00;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f93;stop-opacity:1"/>
     </radialGradient>
     <radialGradient id="radial-2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(121.136,69.9378,-69.9378,121.136,1002.93,317.528)">
-      <stop offset="0"/> <stop offset="1"/>
+      <stop offset="0" style="stop-color:#636;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#66f;stop-opacity:1"/>
     </radialGradient>
     <radialGradient id="radial-3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(118.411,68.3646,-68.3646,118.411,128.993,307.568)">
-      <stop offset="0"/> <stop offset="1"/>
+      <stop offset="0" style="stop-color:#090;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#000;stop-opacity:1"/>
+    </radialGradient>
+    <radialGradient id="radial-4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(121.135,69.9375,-69.9375,121.135,642.412,183.654)">
+      <stop offset="0" style="stop-color:rgb(255,255,51);stop-opacity:1"/>
+      <stop offset="1" style="stop-color:rgb(200,180,100);stop-opacity:1"/>
     </radialGradient>
     <radialGradient id="radial-5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(121.135,69.9375,-69.9375,121.135,642.412,183.654)">
-      <stop offset="0"/> <stop offset="1"/>
+      <stop offset="0" style="stop-color:#fc0;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#036;stop-opacity:1"/>
     </radialGradient>
     <radialGradient id="radial-6" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(121.135,69.9375,-69.9375,121.135,863.351,311.213)">
-      <stop offset="0"/> <stop offset="1"/>
+      <stop offset="0" style="stop-color:#f99;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#f00;stop-opacity:1"/>
     </radialGradient>
     <radialGradient id="radial-7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(118.411,68.3649,-68.3649,118.411,203.227,171.946)">
-      <stop offset="0"/> <stop offset="1"/>
+      <stop offset="0" style="stop-color:#606;stop-opacity:1"/>
+      <stop offset="1" style="stop-color:#fff;stop-opacity:1"/>
     </radialGradient>
-
   </defs>
 </svg>

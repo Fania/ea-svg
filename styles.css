@@ -98,29 +98,6 @@ svg a {
   stroke: white;
 }
 
-#radial-1 stop:first-child { stop-color:rgb(255, 153, 51); }
-#radial-1 stop:last-child  { stop-color:rgb(204,0,0); }
-
-#radial-2 stop:first-child { stop-color:rgb(102,51,102); }
-#radial-2 stop:last-child  { stop-color:rgb(102,102,255); }
-
-#radial-3 stop:first-child { stop-color:rgb(0,0,0); }
-#radial-3 stop:last-child  { stop-color:rgb(0,153,0); }
-
-#radial-4 stop:first-child { stop-color:rgb(255,255,51); }
-#radial-4 stop:last-child  { stop-color:rgb(200,180,100); }
-
-#radial-5 stop:first-child { stop-color:rgb(255,204,0); }
-#radial-5 stop:last-child  { stop-color:rgb(0,51,102); }
-
-#radial-6 stop:first-child { stop-color:rgb(255,160,160); }
-#radial-6 stop:last-child  { stop-color:rgb(255,0,0); }
-
-#radial-7 stop:first-child { stop-color:rgb(102,0,102); }
-#radial-7 stop:last-child  { stop-color:rgb(255,255,255); }
-
-
-
 
 
 @media only screen and (min-width: 600px) {
