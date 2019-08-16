@@ -3,72 +3,79 @@
 
 
   <style>
-    @font-face {
-      font-family: "Astro";
-      src: url("fonts/Astro.woff"),
-          url("fonts/Astro.ttf");
-    }
-    [class^="hermetica-"], [class*=" hermetica-"] {
-      color: black;
-      font-size: 3em;
-    }
-    path {
-      fill-rule: nonzero;
-      stroke: #fff;
-      stroke-width: 1.5px;
-    }
-    text {
-      font-family: 'Astro';
-      font-size: 108px;
-      fill: #fff;
-      stroke: none;
-      text-anchor: middle;
-    }
-    a {
-      cursor: pointer;
-    }
-    [id$="triangle"] {
-      stroke: white;
-      stroke-width: 0.01px;
-    }
-    [id$="line"] {
-      fill: none;
-      stroke: white;
-    }
-    [id$="label"] {
-      fill: none;
-      stroke: white;
-      stroke-width: 0.83px;
-    }
-    [id$="circle"] {
-      fill: none;
-      stroke: white;
-      stroke-width: 1.25px;
-    }
-    <!-- [id$="group"]:hover {
-      opacity: 0.5;
-    } -->
-    [class^="cardinal"] {
-      fill: rgb(204,0,0);
-      stroke: white;
-    }
-    [class^="fixed"] {
-      fill: rgb(102,102,255);
-      stroke: white;
-    }
-    [class^="mutable"] {
-      fill: rgb(0,153,0);
-      stroke: white;
-    }
-    [class*="sun"] {
-      stroke: none;
-      fill: cyan;
-    }
-    [class*="moon"] {
-      stroke: none;
-      fill: orange;
-    }
+    <![CDATA[
 
+      @font-face {
+        font-family: "Astro";
+        src: url("fonts/Astro.woff"),
+            url("fonts/Astro.ttf");
+      }
+      [class^="hermetica-"], [class*=" hermetica-"] {
+        color: black;
+        font-size: 3em;
+      }
+      path {
+        fill-rule: nonzero;
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+      text {
+        font-family: 'Astro';
+        font-size: 108px;
+        fill: #fff;
+        stroke: none;
+        text-anchor: middle;
+      }
+      a {
+        cursor: pointer;
+      }
+      [id$="triangle"] {
+        stroke: white;
+        stroke-width: 0.01px;
+      }
+      [id$="line"] {
+        fill: none;
+        stroke: white;
+      }
+      [id$="label"] {
+        fill: none;
+        stroke: white;
+        stroke-width: 0.83px;
+      }
+      [id$="circle"] {
+        fill: none;
+        stroke: white;
+        stroke-width: 1.25px;
+      }
+      [id$="group"]:hover {
+        opacity: 0.5;
+      }
+      [id^="sign"]:hover {
+        opacity: 1;
+      }
+      [class^="cardinal"] {
+        fill: rgb(204,0,0);
+        stroke: white;
+      }
+      [class^="fixed"] {
+        fill: rgb(102,102,255);
+        stroke: white;
+      }
+      [class^="mutable"] {
+        fill: rgb(0,153,0);
+        stroke: white;
+      }
+      [class*="sun"] {
+        stroke: none;
+        fill: cyan;
+      }
+      [class*="moon"] {
+        stroke: none;
+        fill: orange;
+      }
+
+
+    ]]>
   </style>
 
 
@@ -167,46 +174,70 @@
       <text x="282px" y="337px">j</text>
     </a>
     <!-- cancer -->
-    <path class="cardinal-water" d="M82.216,129.951c25.419,14.676 34.129,47.18 19.453,72.599c-14.677,25.421 -47.181,34.131 -72.6,19.455c-25.42,-14.676 -34.131,-47.181 -19.454,-72.602c14.676,-25.419 47.181,-34.128 72.601,-19.452"/>
-    <text x="55px" y="208px">d</text>
+    <a id="sign-cancer-group" href="http://esotericastrology.org/signs/cancer/" target="_parent">
+      <path class="cardinal-water" d="M82.216,129.951c25.419,14.676 34.129,47.18 19.453,72.599c-14.677,25.421 -47.181,34.131 -72.6,19.455c-25.42,-14.676 -34.131,-47.181 -19.454,-72.602c14.676,-25.419 47.181,-34.128 72.601,-19.452"/>
+      <text x="55px" y="208px">d</text>
+    </a>
     <!-- aries -->
-    <path class="cardinal-fire" d="M298.984,9.615c25.419,14.676 34.13,47.181 19.453,72.601c-14.676,25.42 -47.181,34.129 -72.6,19.453c-25.42,-14.676 -34.131,-47.181 -19.455,-72.601c14.677,-25.42 47.182,-34.129 72.602,-19.453"/>
-    <text x="272px" y="93px">a</text>
+    <a id="sign-aries-group" href="http://esotericastrology.org/signs/aries/" target="_parent">
+      <path class="cardinal-fire" d="M298.984,9.615c25.419,14.676 34.13,47.181 19.453,72.601c-14.676,25.42 -47.181,34.129 -72.6,19.453c-25.42,-14.676 -34.131,-47.181 -19.455,-72.601c14.677,-25.42 47.182,-34.129 72.602,-19.453"/>
+      <text x="272px" y="93px">a</text>
+    </a>
     <!-- libra -->
-    <path class="cardinal-air" d="M13.784,397.299c14.677,-25.421 47.182,-34.13 72.602,-19.454c25.419,14.676 34.13,47.181 19.453,72.602c-14.676,25.42 -47.181,34.128 -72.6,19.452c-25.42,-14.676 -34.131,-47.18 -19.455,-72.6"/>
-    <text x="60px" y="444px">g</text>
+    <a id="sign-libra-group" href="http://esotericastrology.org/signs/libra/" target="_parent">
+      <path class="cardinal-air" d="M13.784,397.299c14.677,-25.421 47.182,-34.13 72.602,-19.454c25.419,14.676 34.13,47.181 19.453,72.602c-14.676,25.42 -47.181,34.128 -72.6,19.452c-25.42,-14.676 -34.131,-47.18 -19.455,-72.6"/>
+      <text x="60px" y="444px">g</text>
+    </a>
 
 
     <!-- aquarius -->
-    <path class="fixed-air" d="M664.091,36.291c14.676,-25.419 47.179,-34.13 72.6,-19.453c25.421,14.677 34.13,47.181 19.454,72.6c-14.677,25.421 -47.181,34.131 -72.601,19.454c-25.421,-14.677 -34.129,-47.18 -19.453,-72.601"/>
-    <text x="711px" y="91px">k</text>
+    <a id="sign-aquarius-group" href="http://esotericastrology.org/signs/aquarius/" target="_parent">
+      <path class="fixed-air" d="M664.091,36.291c14.676,-25.419 47.179,-34.13 72.6,-19.453c25.421,14.677 34.13,47.181 19.454,72.6c-14.677,25.421 -47.181,34.131 -72.601,19.454c-25.421,-14.677 -34.129,-47.18 -19.453,-72.601"/>
+      <text x="711px" y="91px">k</text>
+    </a>
     <!-- leo -->
-    <path class="fixed-fire" d="M447.321,156.628c14.677,-25.421 47.181,-34.131 72.601,-19.455c25.42,14.677 34.13,47.181 19.453,72.602c-14.676,25.42 -47.18,34.129 -72.601,19.452c-25.419,-14.676 -34.129,-47.18 -19.453,-72.599"/>
-    <text x="493px" y="214px">e</text>
+    <a id="sign-leo-group" href="http://esotericastrology.org/signs/leo/" target="_parent">
+      <path class="fixed-fire" d="M447.321,156.628c14.677,-25.421 47.181,-34.131 72.601,-19.455c25.42,14.677 34.13,47.181 19.453,72.602c-14.676,25.42 -47.18,34.129 -72.601,19.452c-25.419,-14.676 -34.129,-47.18 -19.453,-72.599"/>
+      <text x="493px" y="214px">e</text>
+    </a>
     <!-- taurus -->
-    <path class="fixed-earth" d="M451.493,404.522c14.676,-25.42 47.179,-34.13 72.6,-19.453c25.421,14.676 34.13,47.18 19.454,72.6c-14.677,25.422 -47.181,34.13 -72.601,19.453c-25.421,-14.676 -34.13,-47.178 -19.453,-72.6"/>
-    <text x="495px" y="467px">b</text>
+    <a id="sign-taurus-group" href="http://esotericastrology.org/signs/taurus/" target="_parent">
+      <path class="fixed-earth" d="M451.493,404.522c14.676,-25.42 47.179,-34.13 72.6,-19.453c25.421,14.676 34.13,47.18 19.454,72.6c-14.677,25.422 -47.181,34.13 -72.601,19.453c-25.421,-14.676 -34.13,-47.178 -19.453,-72.6"/>
+      <text x="495px" y="467px">b</text>
+    </a>
     <!-- scorpio -->
-    <path class="fixed-water" d="M672.432,532.081c14.676,-25.42 47.179,-34.13 72.599,-19.454c25.422,14.678 34.13,47.181 19.454,72.6c-14.678,25.423 -47.179,34.131 -72.602,19.454c-25.419,-14.676 -34.128,-47.178 -19.451,-72.6"/>
-    <text x="718px" y="595px">h</text>
+    <a id="sign-scorpio-group" href="http://esotericastrology.org/signs/scorpio/" target="_parent">
+      <path class="fixed-water" d="M672.432,532.081c14.676,-25.42 47.179,-34.13 72.599,-19.454c25.422,14.678 34.13,47.181 19.454,72.6c-14.678,25.423 -47.179,34.131 -72.602,19.454c-25.419,-14.676 -34.128,-47.178 -19.451,-72.6"/>
+      <text x="718px" y="595px">h</text>
+    </a>
 
 
     <!-- sagittarius -->
-    <path class="mutable-fire" d="M668.26,284.187c14.677,-25.421 47.181,-34.13 72.601,-19.454c25.421,14.676 34.13,47.18 19.453,72.601c-14.676,25.42 -47.18,34.129 -72.601,19.452c-25.419,-14.676 -34.129,-47.179 -19.453,-72.599"/>
-    <text x="710px" y="344px">i</text>
+    <a id="sign-sagittarius-group" href="http://esotericastrology.org/signs/sagittarius/" target="_parent">
+      <path class="mutable-fire" d="M668.26,284.187c14.677,-25.421 47.181,-34.13 72.601,-19.454c25.421,14.676 34.13,47.18 19.453,72.601c-14.676,25.42 -47.18,34.129 -72.601,19.452c-25.419,-14.676 -34.129,-47.179 -19.453,-72.599"/>
+      <text x="710px" y="344px">i</text>
+    </a>
     <!-- virgo -->
-    <path class="mutable-earth" d="M889.2,411.746c14.676,-25.421 47.18,-34.13 72.6,-19.454c25.421,14.677 34.13,47.181 19.453,72.601c-14.676,25.42 -47.18,34.129 -72.6,19.453c-25.42,-14.676 -34.129,-47.18 -19.453,-72.6"/>
-    <text x="935px" y="476px">f</text>
+    <a id="sign-virgo-group" href="http://esotericastrology.org/signs/virgo/" target="_parent">
+      <path class="mutable-earth" d="M889.2,411.746c14.676,-25.421 47.18,-34.13 72.6,-19.454c25.421,14.677 34.13,47.181 19.453,72.601c-14.676,25.42 -47.18,34.129 -72.6,19.453c-25.42,-14.676 -34.129,-47.18 -19.453,-72.6"/>
+      <text x="935px" y="476px">f</text>
+    </a>
     <!-- pisces -->
-    <path class="mutable-water" d="M885.03,163.85c14.676,-25.419 47.179,-34.129 72.599,-19.453c25.422,14.677 34.13,47.18 19.454,72.6c-14.677,25.421 -47.179,34.131 -72.602,19.453c-25.419,-14.676 -34.127,-47.179 -19.451,-72.6"/>
-    <text x="930px" y="225px">l</text>
+    <a id="sign-pisces-group" href="http://esotericastrology.org/signs/pisces/" target="_parent">
+      <path class="mutable-water" d="M885.03,163.85c14.676,-25.419 47.179,-34.129 72.599,-19.453c25.422,14.677 34.13,47.18 19.454,72.6c-14.677,25.421 -47.179,34.131 -72.602,19.453c-25.419,-14.676 -34.127,-47.179 -19.451,-72.6"/>
+      <text x="930px" y="225px">l</text>
+    </a>
     <!-- gemini -->
-    <path class="mutable-air" d="M1105.97,291.409c14.676,-25.42 47.18,-34.129 72.6,-19.453c25.421,14.677 34.13,47.181 19.454,72.6c-14.677,25.421 -47.181,34.13 -72.602,19.454c-25.419,-14.676 -34.129,-47.18 -19.452,-72.601"/>
-    <text x="1150px" y="354px">c</text>
+    <a id="sign-gemini-group" href="http://esotericastrology.org/signs/gemini/" target="_parent">
+      <path class="mutable-air" d="M1105.97,291.409c14.676,-25.42 47.18,-34.129 72.6,-19.453c25.421,14.677 34.13,47.181 19.454,72.6c-14.677,25.421 -47.181,34.13 -72.602,19.454c-25.419,-14.676 -34.129,-47.18 -19.452,-72.601"/>
+      <text x="1150px" y="354px">c</text>
+    </a>
   </g>
   
   
+  
   <defs>
+
     <radialGradient id="radial-1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(121.135,69.9373,-69.9373,121.135,347.334,184.507)">
       <stop offset="0" style="stop-color:#c00;stop-opacity:1"/>
       <stop offset="1" style="stop-color:#f93;stop-opacity:1"/>
@@ -236,4 +267,5 @@
       <stop offset="1" style="stop-color:#fff;stop-opacity:1"/>
     </radialGradient>
   </defs>
+
 </svg>

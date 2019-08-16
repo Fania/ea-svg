@@ -1,30 +1,30 @@
 
 // responsive svg display
-const dia = document.getElementById("diagram");
-const mql = window.matchMedia('(min-width: 600px)');
-function screenTest(e) {
-  const size = e.matches ? 'desktop' : 'mobile';
-  console.log(size);
-  dia.data = e.matches ? "horizontal.svg" : "vertical.svg";
-}
-mql.addListener(screenTest);
-screenTest(mql);
+// const dia = document.getElementById("diagram");
+// const mql = window.matchMedia('(min-width: 600px)');
+// function screenTest(e) {
+//   const size = e.matches ? 'desktop' : 'mobile';
+//   console.log(size);
+//   dia.data = e.matches ? "horizontal.svg" : "vertical.svg";
+// }
+// mql.addListener(screenTest);
+// screenTest(mql);
 
 
 
 // needs same origin so run local web server
 // needs to be run after page has finished loading
 // see https://svgontheweb.com/#javascript
-window.onload = () => {
-  const obje = document.getElementById("diagram");
-  const svgDoc = obje.contentDocument;
-  svgDoc.querySelector("[class*='sun']").style.fill = "yellow";
-};
+// window.onload = () => {
+//   const obje = document.getElementById("diagram");
+//   const svgDoc = obje.contentDocument;
+//   svgDoc.querySelector("[class*='sun']").style.fill = "yellow";
+// };
 
 
-let rays = document.querySelectorAll("[class*='text']");
-let planets = document.querySelectorAll("[class*='sacred']");
-let nonsacreds = document.querySelectorAll("[class*='non']");
+// let rays = document.querySelectorAll("[class*='text']");
+// let planets = document.querySelectorAll("[class*='sacred']");
+// let nonsacreds = document.querySelectorAll("[class*='non']");
 
 // console.log(rays);
 // console.log(planets);
@@ -41,17 +41,17 @@ let nonsacreds = document.querySelectorAll("[class*='non']");
 
 
 
-const rad = document.choices.mapChoice;
-// console.log(rad);
-// console.log(rad.length);
+// const rad = document.choices.mapChoice;
+// // console.log(rad);
+// // console.log(rad.length);
 
-[...rad].forEach(r => {
-  // console.log(r);
-  r.addEventListener("change", () => {
-    console.log("changed");
+// [...rad].forEach(r => {
+//   // console.log(r);
+//   r.addEventListener("change", () => {
+//     console.log("changed");
     
-  });
-});
+//   });
+// });
 
 
 

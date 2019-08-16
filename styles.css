@@ -29,14 +29,11 @@ body {
 }
 
 
-svg {
+/* svg {
   transform: rotate(-90deg);
   width: 100vw;
-  /* width: 800px; */
   border: 1px solid black;
-  
-  /* margin-top: 100px; */
-}
+  }
 svg path {
   fill-rule: nonzero;
   stroke: #fff;
@@ -48,10 +45,10 @@ svg text {
   fill: #fff;
   stroke: none;
   text-anchor: middle;
-}
+} */
 
 
-
+/* 
 svg a {
   cursor: pointer;
 }
@@ -96,13 +93,13 @@ svg a {
 [class^="mutable"] {
   fill: rgb(0,153,0);
   stroke: white;
-}
+} */
 
 
 
 @media only screen and (min-width: 600px) {
 
-  svg {
+  /* svg {
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -117,6 +114,6 @@ svg a {
 
   #capricorn {
     transform: rotate(0deg);
-  }
+  } */
 
 }
