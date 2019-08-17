@@ -17,6 +17,7 @@ exercise in refactoring a complex SVG export. Aims:
 
 
 https://svgontheweb.com
+https://www.sarasoueidan.com/blog/svg-transformations/
 
 
 ## Rotating SVG
