@@ -26,8 +26,8 @@
     font-size: 108px;
     fill: #fff;
     stroke: none;
-    text-anchor: middle;          // horiz
-    dominant-baseline: central;   // vert
+    text-anchor: middle;
+    dominant-baseline: central;
   }
   a {
     cursor: pointer;
