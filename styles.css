@@ -27,6 +27,11 @@ body {
   font-family: 'Astro';
   font-size: 2em;
 }
+/* 
+object#diagram {
+  width: 100vw;
+  height: 100%;
+} */
 
 
 /* svg {

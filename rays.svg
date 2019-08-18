@@ -1,5 +1,9 @@
-<svg width="100%" height="100%" viewBox="0 0 1208 615" 
+<svg viewBox="0 0 1208 615" 
+     
      xmlns="http://www.w3.org/2000/svg">
+
+<!-- style="overflow:hidden" -->
+
 
 <title>Seven Rays</title>
 <desc></desc>
@@ -15,6 +19,9 @@
   [class^="hermetica-"], [class*=" hermetica-"] {
     color: black;
     font-size: 3em;
+  }
+  svg {
+    border: 1px solid black;
   }
   path {
     fill-rule: nonzero;
@@ -288,14 +295,26 @@
     const svg = document.querySelector("svg");
     const r1t = document.querySelectorAll("text");
 
-    if(!e.matches) {  // mobile
+    // mobile
+    if(!e.matches) {
+      // rotate svg
+      
+      // viewBox="0 0 1208 615"
+      //svg.setAttribute("viewBox", "0 0 615 1208");
       svg.setAttribute("transform", "rotate(-90)");
+      //svg.setAttribute("width", "100%");
+      //svg.setAttribute("height", "100%");
+      //svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+
+      // rotate text
       [...r1t].forEach( t => {
         const x = parseInt(t.getAttribute('x').slice(0, -2));
         const y = parseInt(t.getAttribute('y').slice(0, -2));
         t.setAttribute("transform", `rotate(90 ${x} ${y})`);
       });
-    } else {  // desktop
+
+    // desktop
+    } else {
       svg.setAttribute("transform", "rotate(0)");
       [...r1t].forEach( t => {
         t.setAttribute("transform", "rotate(0)");

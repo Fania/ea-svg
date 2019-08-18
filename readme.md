@@ -14,10 +14,13 @@ exercise in refactoring a complex SVG export. Aims:
 - [Gradients and Patterns (W3C Recommendation: SVG 1.1, 16 August 2011)](https://www.w3.org/TR/SVG11/pservers.html)
 - [Using A Radial Gradient Fill in SVG](http://www.svgbasics.com/radial_gradients.html)
 - [w3schools SVG radialGradient](https://www.w3schools.com/graphics/tryit.asp?filename=trysvg_radial)
-
+- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio
 
 https://svgontheweb.com
+- [Sara Soueidan: SVG Coordinate Systems](https://www.sarasoueidan.com/blog/svg-coordinate-systems/)
 https://www.sarasoueidan.com/blog/svg-transformations/
+https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/
+https://www.sarasoueidan.com/images/svg-nesting-chick.svg
 
 
 ## Rotating SVG
@@ -61,3 +64,7 @@ Rotate shape directly in SVG using `rotate(deg cx cy)`:
 <rect class="g" width="300" height="100" x="400" y="330"
       transform="rotate(90 550 380)" />
 ```
+
+
+
+
