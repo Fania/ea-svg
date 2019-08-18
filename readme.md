@@ -21,6 +21,10 @@ https://svgontheweb.com
 https://www.sarasoueidan.com/blog/svg-transformations/
 https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/
 https://www.sarasoueidan.com/images/svg-nesting-chick.svg
+https://www.sarasoueidan.com/blog/svg-coordinate-systems/
+https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/
+
+
 
 
 ## Rotating SVG

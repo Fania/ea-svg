@@ -302,8 +302,11 @@
       // viewBox="0 0 1208 615"
       //svg.setAttribute("viewBox", "0 0 615 1208");
       svg.setAttribute("transform", "rotate(-90)");
-      //svg.setAttribute("width", "100%");
-      //svg.setAttribute("height", "100%");
+
+
+      // viewport
+      svg.setAttribute("width", "615");
+      svg.setAttribute("height", "1208");
       //svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
 
       // rotate text
