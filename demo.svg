@@ -5,10 +5,6 @@
   <style>
     <![CDATA[
 
-      svg {
-        border: 1px solid black;
-      }
-
       text {
         font-size: 3em;
       }
@@ -24,21 +20,23 @@
       .rotate {
         transform: rotate(90deg);
       }
+      .flip {
+        transform: rotate(180deg);
+      }
 
       rect {
         fill: red;
       }
 
-      rect:hover {
-        fill: purple;
-      }
-
-      rect:hover ~ .b, .c {
+      .b:hover ~ .c {
        display: none;
       }
 
-      rect:hover ~ .c, .b {
-       display: block;
+      .d {
+        fill: cyan;
+      }
+      .d:hover ~ .dt {
+        transform: rotate(45deg);
       }
 
 
@@ -52,29 +50,98 @@
     ]]>
   </style>
   
-  <rect class="a" width="300" height="100" x="50" y="50" />
-  <text class="b" x="80" y="110">Hello World</text>
+
+
+
+  <rect class="a" width="800" height="100" x="50" y="50" />
+  <text class="at" x="80" y="110">A: click to change color of C</text>
+
+  <rect class="b" width="800" height="100" x="50" y="200" />
+  <text class="bt" x="80" y="260">B: hover to hide C</text>
+
+  <rect class="c" width="800" height="100" x="50" y="350" />
+  <text class="ct" x="80" y="410">C</text>
+
+  <rect class="d center-box" width="800" height="100" x="50" y="500" />
+  <text class="dt center-text" x="425" y="550">D: hover to flip text</text>
+
+  <rect class="e" width="800" height="100" x="50" y="650" />
+  <text class="et center-text" x="425" y="700">D: click to rotate text</text>
+
+
+
+
+<!-- 
   <text class="c" x="80" y="110">Hello Dave!</text>
   <text class="d" x="80" y="200">Output</text>
+
   <rect class="e" width="100" height="300" x="150" y="230" 
         transform="rotate(90 200 380)" />
+
   <rect class="f" width="300" height="100" x="400" y="50" />
+
   <rect class="g" width="300" height="100" x="400" y="330"
         transform="rotate(90 550 380)" />
+
   <text class="h center-text" x="520" y="200"
         transform="rotate(180 520 200)">Yo World</text>
-  <rect class="i center-box rotate" width="300" height="100" x="50" y="630" />
+
+  <rect class="i center-box rotate" width="300" height="100" x="50" y="630" /> -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <rect class="a" width="300" height="100" x="50" y="50" />
+  <text class="b" x="80" y="110">Hello World</text>
+
+  <text class="c" x="80" y="110">Hello Dave!</text>
+  <text class="d" x="80" y="200">Output</text>
+
+  <rect class="e" width="100" height="300" x="150" y="230" 
+        transform="rotate(90 200 380)" />
+
+  <rect class="f" width="300" height="100" x="400" y="50" />
+
+  <rect class="g" width="300" height="100" x="400" y="330"
+        transform="rotate(90 550 380)" />
+
+  <text class="h center-text" x="520" y="200"
+        transform="rotate(180 520 200)">Yo World</text>
+
+  <rect class="i center-box rotate" width="300" height="100" x="50" y="630" /> -->
+
+
 
   <script>
     <![CDATA[
 
-      const rect1 = document.querySelector("rect");
-      const rect2 = document.querySelector("rect.e");
-      rect1.addEventListener("click", ()=> {
-        document.querySelector(".d").textContent = "Hi!";
+      //const rect1 = document.querySelector("rect");
+      //const rect2 = document.querySelector("rect.e");
+      //rect1.addEventListener("click", ()=> {
+      //  document.querySelector(".d").textContent = "Hi!";
+      //});
+      //rect2.addEventListener("click", ()=> {
+      //  document.querySelector(".d").textContent = "Output";
+      //});
+
+      const rectA = document.querySelector(".a");
+      const rectC = document.querySelector(".c");
+      rectA.addEventListener("click", ()=> {
+        console.log("kdjf");
+        document.querySelector(".c").style.fill = "green";
+        document.querySelector(".ct").textContent = "C: click to reset colour";
       });
-      rect2.addEventListener("click", ()=> {
-        document.querySelector(".d").textContent = "Output";
+      rectC.addEventListener("click", ()=> {
+        console.log("sdfare");
+        document.querySelector(".c").style.fill = "red";
+        document.querySelector(".ct").textContent = "C";
       });
 
     ]]>
