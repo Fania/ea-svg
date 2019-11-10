@@ -1,9 +1,9 @@
-<svg viewBox="0 0 1208 615" 
+<svg viewBox="0 0 1208 615"
      
      xmlns="http://www.w3.org/2000/svg">
 
 <!-- style="overflow:hidden" -->
-
+<!-- viewBox="0 0 1208 615"  -->
 
 <title>Seven Rays</title>
 <desc></desc>
@@ -84,10 +84,16 @@
     fill: orange;
   }
 
+  svg {
+      background: yellow;
+    }
 
 
   @media screen and (min-width: 600px) {
 
+    svg {
+      background: red;
+    }
 
   }
 
