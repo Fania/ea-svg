@@ -1,16 +1,31 @@
+:root {
+  --cardinal: rgb(204,0,0);
+  --fixed: rgb(102,102,255);
+  --mutable: rgb(0,153,0);
+
+  --ray1: #900;
+  --ray2: #228;
+  --ray3: #060;
+  --ray4: #fc0;
+  --ray5: #e60;
+  --ray6: #d33;
+  --ray7: #517;
+}
+
+
 @font-face {
   font-family: "Astro";
   src: url("fonts/Astro.woff"), url("fonts/Astro.ttf");
 }
 path {
   fill-rule: nonzero;
-  stroke: #fff;
+  stroke: white;
   stroke-width: 1.5px;
 }
 text {
   font-family: 'Astro';
   font-size: 108px;
-  fill: #fff;
+  fill: white;
   stroke: none;
   text-anchor: middle;
   dominant-baseline: middle;
@@ -43,15 +58,15 @@ a {
   opacity: 1;
 }
 [class^="cardinal"] {
-  fill: rgb(204,0,0);
+  fill: var(--cardinal);
   stroke: white;
 }
 [class^="fixed"] {
-  fill: rgb(102,102,255);
+  fill: var(--fixed);
   stroke: white;
 }
 [class^="mutable"] {
-  fill: rgb(0,153,0);
+  fill: var(--mutable);
   stroke: white;
 }
 [class*="sun"] {
@@ -85,3 +100,12 @@ a {
 #radial-7 stop:first-child { stop-color:rgb(102,0,102); }
 #radial-7 stop:last-child  { stop-color:rgb(255,255,255); }
 
+/* 
+--ray1: #900;
+--ray2: #228;
+--ray3: #060;
+--ray4: #fc0;
+--ray5: #e60;
+--ray6: #d33;
+--ray7: #517; 
+*/
