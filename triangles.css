@@ -1,0 +1,186 @@
+/* triangles diagrams and pages */
+
+/* allow for triangle image */
+#container.triangles h2 + blockquote {
+  padding-right: 104px;
+  margin-right: 98px
+}
+#container .navimg, /* only small triangles on signs pages */
+#triangle {
+  position: relative; /* z-index context */
+  z-index: 500; /* above tabbed sections */
+  display: block;
+  float: right;
+  margin: -60px 8px 8px 2px;
+}
+.tabbed #triangle { /* adjust for tabs */
+  margin-top: -70px;
+}
+/* generic triangles */
+#triangle {
+  width: 188px;
+  height: 167px;
+  margin-left: 1.5em;
+}
+#triangle {
+  background: url('/images/triangle-background.png') no-repeat 1px 0;
+}
+#triangle > a:link,
+#triangle > a:visited {
+  display: block;
+  width: 55px;
+  height: 55px;
+  border: 2px solid rgba(255,255,255,1); /* =59px */
+  border-radius: 50%;
+  color: white;
+}
+#triangle > a:hover {
+  opacity: 0.7;
+  /* border-color: rgba(255,255,255,0.3); */
+}
+/* positions the triangle nodes */
+#triangle a#node1:link, #triangle a#node1:visited,
+#triangle a#node4:link, #triangle a#node4:visited { margin: 0 auto; }
+
+#triangle a#node2:link, #triangle a#node2:visited,
+#triangle a#node3:link, #triangle a#node3:visited,
+#triangle a.ray7:link, #triangle a.ray7:visited { position: absolute; bottom: 0px; }
+
+#triangle a#node2:link, #triangle a#node2:visited { left: 0; }
+
+#triangle a#node3:link, #triangle a#node3:visited,
+#triangle a#node3.ray7n:link, #triangle a#node3.ray7n:visited { right: 0px; }
+
+#triangle a#node4:link, #triangle a#node4:visited,
+#triangle a#node3.ray7n:link, #triangle a#node3.ray7n:visited {
+  margin-top: 11px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Times New Roman', 'Baskerville', serif;
+  font-size: 55px;
+  line-height: 55px;
+  background-image: none;
+}
+
+#triangle a#node3.ray7n:link, #triangle a#node3.ray7n:visited {
+  margin-top: 0;
+}
+/* cardinal signs :*/
+#triangle a.aries:link, #triangle a.aries:visited,
+#triangle a.cancer:link, #triangle a.cancer:visited,
+#triangle a.libra:link, #triangle a.libra:visited,
+#triangle a.capricorn:link, #triangle a.capricorn:visited,
+#triangle a.greatbear:link, #triangle a.greatbear:visited,
+#triangle a.polaris:link, #triangle a.polaris:visited,
+#triangle a.pointer:link, #triangle a.pointer:visited,
+#triangle a.polestar:link, #triangle a.polestar:visited {
+  background-color: #c33;
+}
+#triangle a.aries:link, #triangle a.aries:visited {
+/*  background-position: 0 0;*/
+}
+#triangle a.cancer:link, #triangle a.cancer:visited {
+  background-position: -55px 0;
+}
+#triangle a.libra:link, #triangle a.libra:visited {
+  background-position: -110px 0;
+}
+#triangle a.capricorn:link, #triangle a.capricorn:visited {
+  background-position: -165px 0;
+}
+#triangle a.greatbear:link, #triangle a.greatbear:visited {
+  background-position: -220px 0;
+}
+#triangle a.polaris:link, #triangle a.polaris:visited,
+#triangle a.pointer:link, #triangle a.pointer:visited,
+#triangle a.polestar:link, #triangle a.polestar:visited {
+  background-position: -275px 0;
+}
+/* fixed signs: */
+#triangle a.taurus:link, #triangle a.taurus:visited,
+#triangle a.leo:link, #triangle a.leo:visited,
+#triangle a.scorpio:link, #triangle a.scorpio:visited,
+#triangle a.aquarius:link, #triangle a.aquarius:visited,
+#triangle a.sirius:link, #triangle a.sirius:visited {
+  background-color: #55b;
+}
+#triangle a.taurus:link, #triangle a.taurus:visited {
+  background-position: 0 -55px;
+}
+#triangle a.leo:link, #triangle a.leo:visited {
+  background-position: -55px -55px;
+}
+#triangle a.scorpio:link, #triangle a.scorpio:visited {
+  background-position: -110px -55px;
+}
+#triangle a.aquarius:link, #triangle a.aquarius:visited {
+  background-position: -165px -55px;
+}
+#triangle a.sirius:link, #triangle a.sirius:visited {
+  background-position: -220px -55px;
+}
+/* mutable signs: */
+#triangle a.gemini:link, #triangle a.gemini:visited,
+#triangle a.virgo:link, #triangle a.virgo:visited,
+#triangle a.sagittarius:link, #triangle a.sagittarius:visited,
+#triangle a.pisces:link, #triangle a.pisces:visited,
+#triangle a.pleiades:link, #triangle a.pleiades:visited {
+  background-color: #292;
+}
+#triangle a.gemini:link, #triangle a.gemini:visited {
+  background-position: 0 -110px;
+}
+#triangle a.virgo:link, #triangle a.virgo:visited {
+  background-position: -55px -110px;
+}
+#triangle a.sagittarius:link, #triangle a.sagittarius:visited {
+  background-position: -110px -110px;
+}
+#triangle a.pisces:link, #triangle a.pisces:visited {
+  background-position: -165px -110px;
+}
+#triangle a.pleiades:link, #triangle a.pleiades:visited {
+  background-position: -220px -110px;
+}
+/* planets: */
+#triangle a.vulcan:link, #triangle a.vulcan:visited {
+  background-position: 0 -165px;
+}
+#triangle a.jupiter:link, #triangle a.jupiter:visited {
+  background-position: -55px -165px;
+}
+#triangle a.saturn:link, #triangle a.saturn:visited {
+  background-position: -110px -165px;
+}
+#triangle a.mercury:link, #triangle a.mercury:visited {
+  background-position: -165px -165px;
+}
+#triangle a.venus:link, #triangle a.venus:visited {
+  background-position: -220px -165px;
+}
+#triangle a.neptune:link, #triangle a.neptune:visited {
+  background-position: -275px -165px;
+}
+#triangle a.uranus:link, #triangle a.uranus:visited {
+  background-position: 0 -220px;
+}
+#triangle a.pluto:link, #triangle a.pluto:visited {
+  background-position: -55px -220px;
+}
+#triangle a.sun:link, #triangle a.sun:visited {
+  background-position: -110px -220px;
+}
+#triangle a.earth:link, #triangle a.earth:visited {
+  background-position: -165px -220px;
+}
+#triangle a.moon:link, #triangle a.moon:visited {
+  background-position: -220px -220px;
+}
+#triangle a.mars:link, #triangle a.mars:visited {
+  background-position: -275px -220px;
+}
+
+#triangle > a:link, #triangle > a:visited {
+  background-image: url(/images/triangle-nodes.png);
+  background-repeat: no-repeat;
+}

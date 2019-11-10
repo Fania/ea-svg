@@ -1,0 +1,46 @@
+#container {
+  min-width: unset;
+  max-width: unset;
+  /* margin-top: 80px; */
+}
+
+#container h1 {
+  text-align: end;
+  height: 75px;
+}
+
+nav {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  width: 95%;
+}
+
+#eamap {
+  background: black;
+}
+
+nav object, nav input {
+  display: none;
+}
+
+nav object svg {
+  margin: 0 auto;
+}
+
+#menu-toggle:checked + label img {
+  border: white solid 1px;
+}
+
+#menu-toggle:checked + label + object {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: beige;
+}
+
+#menu-toggle:not(:checked) + label img {
+  border: red solid 1px;
+}
+

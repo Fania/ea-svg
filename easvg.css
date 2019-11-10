@@ -1,0 +1,111 @@
+:root {
+  --cardinal: rgb(204,0,0);
+  --fixed: rgb(102,102,255);
+  --mutable: rgb(0,153,0);
+
+  --ray1: #900;
+  --ray2: #228;
+  --ray3: #060;
+  --ray4: #fc0;
+  --ray5: #e60;
+  --ray6: #d33;
+  --ray7: #517;
+}
+
+
+@font-face {
+  font-family: "Astro";
+  src: url("fonts/Astro-woff.woff"), url("fonts/Astro-ttf.ttf");
+}
+path {
+  fill-rule: nonzero;
+  stroke: white;
+  stroke-width: 1.5px;
+}
+text {
+  font-family: 'Astro';
+  font-size: 108px;
+  fill: white;
+  stroke: none;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+a {
+  cursor: pointer;
+}
+[id$="triangle"] {
+  stroke: white;
+  stroke-width: 0.01px;
+}
+[id$="line"] {
+  fill: none;
+  stroke: white;
+}
+[id$="label"] {
+  fill: none;
+  stroke: white;
+  stroke-width: 0.83px;
+}
+[id$="circle"] {
+  fill: none;
+  stroke: white;
+  stroke-width: 1.25px;
+}
+[id$="group"]:hover {
+  opacity: 0.5;
+}
+[id^="sign"]:hover {
+  opacity: 1;
+}
+[class^="cardinal"] {
+  fill: var(--cardinal);
+  stroke: white;
+}
+[class^="fixed"] {
+  fill: var(--fixed);
+  stroke: white;
+}
+[class^="mutable"] {
+  fill: var(--mutable);
+  stroke: white;
+}
+[class*="sun"] {
+  stroke: none;
+  fill: cyan;
+}
+[class*="moon"] {
+  stroke: none;
+  fill: orange;
+}
+
+
+#radial-1 stop:first-child { stop-color:rgb(255,153,51); }
+#radial-1 stop:last-child  { stop-color:rgb(204,0,0); }
+
+#radial-2 stop:first-child { stop-color:rgb(102,51,102); }
+#radial-2 stop:last-child  { stop-color:rgb(102,102,255); }
+
+#radial-3 stop:first-child { stop-color:black; }
+#radial-3 stop:last-child  { stop-color:rgb(0,153,0); }
+
+#radial-4 stop:first-child { stop-color:rgb(255,255,51); }
+#radial-4 stop:last-child  { stop-color:rgb(200,180,100); }
+
+#radial-5 stop:first-child { stop-color:rgb(255,204,0); }
+#radial-5 stop:last-child  { stop-color:rgb(0,51,102); }
+
+#radial-6 stop:first-child { stop-color:rgb(255,160,160); }
+#radial-6 stop:last-child  { stop-color:rgb(255,0,0); }
+
+#radial-7 stop:first-child { stop-color:rgb(102,0,102); }
+#radial-7 stop:last-child  { stop-color:rgb(255,255,255); }
+
+/* 
+--ray1: #900;
+--ray2: #228;
+--ray3: #060;
+--ray4: #fc0;
+--ray5: #e60;
+--ray6: #d33;
+--ray7: #517; 
+*/

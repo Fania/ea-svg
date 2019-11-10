@@ -1,0 +1,449 @@
+
+/* colours
+cardinal background: #c33, color: #900
+fixed    background: #55b, color: #228
+mutable  background: #292, color: #060
+
+.ray1 background: #900
+.ray2 background: #228
+.ray3 background: #060
+.ray4 background: #fc0
+.ray5 background: #e60
+.ray6 background: #d33
+.ray7 background: #517
+ */
+
+body {
+  background: #000012;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  padding: 0 0 0.5em;
+  margin: 0;
+}
+img, img a { border: 0; }
+a { outline: 0; }
+a:link,
+a:visited { color: #229; }
+a:hover { color: #55c; }
+
+.cardinal, .cardinal + .tabs li a,
+.ray1, .ray1 + .tabs li a  { background: #900; }
+.fixed, .fixed + .tabs li a,
+.ray2, .ray2 + .tabs li a  { background: #228; }
+.mutable, .mutable + .tabs li a,
+.ray3, .ray3 + .tabs li a  { background: #060; }
+.ray4, .ray4 + .tabs li a  { background: #fc0; }
+.ray5, .ray5 + .tabs li a  { background: #e60; }
+.ray6, .ray6 + .tabs li a  { background: #d33; }
+.ray7, .ray7 + .tabs li a  { background: #517; }
+
+#container {
+  position: relative;
+  margin: 0 auto 0.5em;
+  width: 100%;
+  min-width: 800px;
+  max-width: 1200px;
+  background: #fff;
+  overflow: auto;
+}
+h1 {
+  position: relative;
+  height: 34px;
+  background: #000012;
+  color: #fff;
+  margin: 0 0 1em;
+  padding: 0.25em 0;
+  text-align: center;
+  font-size: 1.9em;
+  letter-spacing: 1px;
+  border-bottom: 1px #bbb solid;
+  text-shadow: 0px 0px 4px #333; 
+}
+h1 a[href="/"]:link,
+h1 a[href="/"]:visited {
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  opacity: 0.68;
+  text-decoration: none;
+  border-bottom: none;
+  transition:all 1s;
+}
+h1 a[href="/"]:hover {
+  opacity: 1.0;
+}
+h1 a:link,
+h1 a:visited {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+h1 a:hover {
+  border-bottom: 1px #fff solid;
+}
+h1.ray1,
+h1.ray2,
+h1.ray3,
+h1.ray5,
+h1.ray6,
+h1.ray7 {
+  color: #fff;
+}
+h2, h3 {
+  margin: 0;
+  padding: 0 12px;
+  font-size: 1.25em;
+}
+/* stronger shadow on yellow background */
+h1.ray4,
+h1.ray4 a {
+  text-shadow: 0px 0px 6px #001;
+}
+.crosses h2 + p {
+  margin-top: 0.25em;
+}
+h2 + table, /* general for any table following an h2 */
+h2 + .qualities,
+blockquote + .qualities {
+  margin-top: 1em;
+}
+h3,
+h3 a:link,
+h3 a:visited,
+h3 a:active {
+  color: #336;
+}
+h3 a:hover {
+  text-decoration:none;
+  color: #55c;
+}
+h3 + p {
+  margin-top: 0.25em;
+}
+#content select {
+  font: 1em Georgia, sans-serif;
+}
+.list-blank {
+  list-style-type: none;
+}
+.list-alpha {
+  list-style-type: lower-alpha;
+  line-height: 1em;
+}
+
+
+.tabbed h1 {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.tabs {
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+}
+.tabs li {
+  display: inline-block;
+  margin-left: 2px;
+}
+
+* + .tabs li a {
+  box-shadow: inset 0px 2px 2px 0px rgba(20, 20, 20, 0.4);
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+.tabs li a:link,
+.tabs li a:visited {
+  opacity: 0.70;
+  color: #eee;
+  transition: all 0.4s;
+  display: block;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+h1.ray4 + .tabs li a:link,
+h1.ray4 + .tabs li a:visited {
+  color: #666;
+}
+.tabs li a:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+.tabs li a.active {
+  color: #fff;
+  opacity: 1;
+  box-shadow: none;
+}
+.tabs li a.active:hover {
+  text-decoration: none;
+}
+/* ------------ end tabs --------------- */
+
+#container p,
+#container dl {
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 1.6em;
+}
+#container blockquote dl {
+  border: none;
+  margin: 0 12px;
+  padding: 0;
+  /* background-color: #eee; */
+}
+
+#container.textpage h1 + p,
+.intro {
+  background: #eee;
+  font-size: 1.25em;
+  padding: 0.5em 3%;
+  margin: 0 8% 1em;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  color: #666;
+}
+h2 + .intro {
+  margin-top: 1em;
+}
+#container ol li {
+  margin-bottom: 1em;
+  margin-right: 12px;
+}
+#container dt {
+  font-weight: bold;
+}
+#container dl,
+#container blockquote {
+  border: 1px #889 solid;
+  background-color: #eee;
+}
+blockquote footer {
+  border-top: 1px solid #ccc;
+  padding: 0.5em 0;
+  color: #666;
+}
+#container blockquote:last-child {
+  margin-bottom: 1em;
+}
+#container .refs {
+  margin: 1.5em 0 0;
+  padding: 0.5em 10px;
+  background-color: #eee;
+  border-top: 1px #889 solid;
+  text-align: right;
+}
+#container .emphasis p {
+  margin-left: 2em;
+  padding-left: 2em;
+  border-left: 10px solid #ccc;
+}
+#container blockquote,
+#container dl {
+  margin: 1em 12px 0;
+  padding: 1em 12px 0.5em;
+  border-radius: 9px;
+}
+#container dd p {
+  padding-left: 0;
+  padding-right: 0;
+}
+#container blockquote p {
+  margin: 0.5em 0;
+}
+#container blockquote p:first-child {
+  margin-top: 0;
+}
+#container .rays blockquote {
+  margin: 1em 24px 1em;
+  font-size: 1em;
+}
+#container .rays blockquote p {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#container .rays p {
+  margin-left: 36px;
+  margin-right: 24px;
+}
+
+h2 + h3,
+#container dl + h2,
+#container blockquote + h2,
+#container dl + h3,
+#container blockquote + h3 {
+  margin-top: 1em;
+}
+#container blockquote:last-child,
+#container dl:last-child {
+  margin-bottom: 1em;
+}
+
+/* ==== triangles diagrams and pages in "triangles.css" ==== */
+
+#map {
+  position: relative;
+  width: 573px;
+  height: 383px;
+  margin: -1em auto 0;
+}
+#map img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* ----- map menu ---- */
+#mapmenu {
+  position: absolute;
+  top: 4.25em;
+  left: 16px;
+  z-index: 501;
+  width: 11.5em;
+  margin: 0;
+  padding: 0 0 6px;
+  opacity: 0.45;
+  list-style-type: none;
+  text-align: left;
+  font-weight: bold;
+  border: 1px #ccc solid;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+#mapmenu li:first-child {
+  margin-bottom: 6px;
+  padding: 0.25em 6px;
+  background: #ccc;
+  border-bottom: 1px #bbb solid;
+}
+#mapmenu a:link,
+#mapmenu a:visited {
+  display: block;
+  padding: 0.5em 6px;
+  color: #558;
+  text-decoration: none;
+}
+#mapmenu a:hover {
+  color: inherit;
+}
+
+/* ----- Main menu ----- */
+#menu {
+  margin: 1em auto 0;
+  background: #fff;
+  opacity: 0.45;
+  text-align: center;
+}
+#menu ul {
+  display: inline-block;
+  width: 33%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-left: 0.33% #fff solid;
+  background: #bbb;
+  overflow: auto;
+}
+#menu li a:link,
+#menu li a:visited {
+  display: block;
+  text-decoration: none;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  border-top: 1px #fff solid;
+}
+#menu li a:hover {
+  background: #ccc;
+}
+
+#menu .car li:first-child {background: #c33;}
+#menu .fix li:first-child {background: #55b;}
+#menu .mut li:first-child {background: #292;}
+
+#menu .car a:link, .car a:visited {color: #c33;}
+#menu .fix a:link, .fix a:visited {color: #55b;}
+#menu .mut a:link, .mut a:visited {color: #292;}
+#menu .car a:hover {color: #900;}
+#menu .fix a:hover {color: #228;}
+#menu .mut a:hover {color: #060;}
+
+#menu .car li:first-child a:link, .car li:first-child a:visited,
+#menu .fix li:first-child a:link, .fix li:first-child a:visited,
+#menu .mut li:first-child a:link, .mut li:first-child a:visited {
+  color: #ccc;
+}
+
+#menu .car li:first-child a:hover {background: #900; color: #fff;}
+#menu .fix li:first-child a:hover {background: #228; color: #fff;}
+#menu .mut li:first-child a:hover {background: #060; color: #fff;}
+
+
+/* ----- tables ----- */
+.qualities {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 1em;
+}
+.qualities:last-child {
+  padding-bottom: 0;
+}
+.qualities th,
+.qualities td,
+.triangles table th,
+.triangles table td {
+  border-bottom: 1px #ccc solid;
+  padding: 0.5em;
+  vertical-align: top;
+}
+.qualities tr:first-child th,
+.qualities tr:first-child td {
+  border-top: 1px #ddd solid;
+}
+.qualities th {
+  min-width: 190px;
+  text-align: right;
+  background: #ddd;
+}
+.qualities td {
+  background: #fff;
+  min-width: 680px;
+}
+
+.triangles table {
+  margin: 1em auto 0;
+}
+.triangles table th {
+  background: #ddd;
+}
+.triangles table th,
+.triangles table td {
+  text-align: center;
+  padding: 0.5em 1.5em;
+}
+
+/* ray keywords */
+#summary h2 + p {
+  font-size: 1.2em;
+}
+
+/* ----- footer links ----- */
+footer {
+  margin: 0.25em 0 0;
+  padding: 0;
+  text-align: center;
+  color: #ddf;
+  letter-spacing: 1px;
+}
+footer a:link,
+footer a:visited {
+  color: #ddf;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ccd;
+}
+footer a.active:link,
+footer a.active:visited {
+  color: #ccd;
+}
