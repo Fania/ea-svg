@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EA-SVG</title>
-  <link rel="stylesheet" href="hermetica.css">
-  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="hermetica.css"> -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
   <base target="_parent">
 </head>
 <body>
 
-<form id="choices" name="choices">
+<!-- <form id="choices" name="choices">
 <fieldset data-role="controlgroup">
   <legend>Map options:</legend>
 
@@ -23,14 +23,14 @@
   <input type="radio" name="mapChoice" id="nonsacred-button" value="choice-3">
   <label for="nonsacred-button">Non-sacred planets</label>
 </fieldset>
-</form>
+</form> -->
 
-<br>
+<!-- <br>
 
 <p class="astro">abcdefghijklmno<br>pqrstuvwxyz<br>1234567890</p>
 <p class="astro">ABCDEFGHIJKLMNO<br>PQRSTUVWXYZ</p>
 
-<br>
+<br> -->
 
 
 <!-- 
@@ -42,15 +42,56 @@
     overflow: hidden;
     height: auto;
   }
+  #circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #circles object {
+    /* border: 1px solid black; */
+    max-height: 60vh;
+    width: 300px;
+  }
+  #rays {
+    display: flex;
+    justify-content: space-around;
+  }
+  #rays object {
+    width: 30%;
+  }
 </style>
 
-<object id="diagram" type="image/svg+xml" data="rays.svg"></object>
 
-<object id="diagram" width="400" type="image/svg+xml" data="rays.svg"></object>
+<section id="circles">
+  <!-- <object type="image/svg+xml" data="circles/1.svg"></object> -->
+  <!-- <object type="image/svg+xml" data="circles/2.svg"></object> -->
+  <object type="image/svg+xml" data="circles/trine.svg"></object>
+  <object type="image/svg+xml" data="circles/square.svg"></object>
+  <object type="image/svg+xml" data="circles/quintile.svg"></object>
+  <object type="image/svg+xml" data="circles/sextile.svg"></object>
+  <object type="image/svg+xml" data="circles/septile.svg"></object>
+  <object type="image/svg+xml" data="circles/octile.svg"></object>
+  <object type="image/svg+xml" data="circles/novile.svg"></object>
+  <object type="image/svg+xml" data="circles/decile.svg"></object>
+  <object type="image/svg+xml" data="circles/11.svg"></object>
+  <object type="image/svg+xml" data="circles/12.svg"></object>
+</section>
 
-<object id="diagram" width="700" type="image/svg+xml" data="rays.svg"></object>
 
-<object id="diagram" width="100%" type="image/svg+xml" data="rays.svg"></object>
+<section id="rays">
+  <object id="diagram" type="image/svg+xml" data="rays-V.svg"></object>
+  <object id="diagram" type="image/svg+xml" data="non-sacreds-V.svg"></object>
+  <object id="diagram" type="image/svg+xml" data="sacred-planets-V.svg"></object>
+</section>
+
+<!-- 
+<object id="diagram" type="image/svg+xml" data="rays-H.svg"></object>
+
+<object id="diagram" width="400" type="image/svg+xml" data="rays-H.svg"></object>
+
+<object id="diagram" width="700" type="image/svg+xml" data="rays-H.svg"></object>
+
+<object id="diagram" width="100%" type="image/svg+xml" data="rays-H.svg"></object> -->
 
 
 <!-- <script>
@@ -69,6 +110,6 @@
 <span class="hermetica-A007-scorpio"></span> -->
 
 
-<script src="scripts.js"></script>
+<!-- <script src="scripts.js"></script> -->
 </body>
 </html>

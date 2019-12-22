@@ -1,0 +1,26 @@
+<svg viewBox="0 0 1000 1000"
+     xmlns="http://www.w3.org/2000/svg">
+
+<title>Quintile</title>
+<desc></desc>
+
+<circle cx="500" cy="500" r="400" fill="none" stroke="black" />
+
+<!-- 5  -->
+<polygon fill="none" stroke="black" 
+        points="500,100 120,376 265,824 735,824 880,376" />
+
+<!-- 5 star (skip 1) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 265,824 880,376 120,376 735,824" />
+
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="120" y2="376" />
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="265" y2="824" />
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="735" y2="824" />
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="880" y2="376" />
+
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 1000 1000"
+     xmlns="http://www.w3.org/2000/svg">
+
+<title>Decile</title>
+<desc></desc>
+
+<circle cx="500" cy="500" r="400" fill="none" stroke="black" />
+
+<!-- 10 -->
+<polygon fill="none" stroke="black" 
+        points="500,100 265,176 120,376 120,624 265,824 
+                500,900 735,824 880,624 880,376 735,176" />
+
+<!-- 2 x 5 (skip 1) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 120,376 265,824 735,824 880,376" />
+<polygon fill="none" stroke="black" 
+        points="265,176 120,624 500,900 880,624 735,176" />
+
+<!-- 10 star (skip 2) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 120,624 735,824 735,176 120,376
+                500,900 880,376 265,176 265,824 880,624" />
+
+<!-- 2 x 5 star (skip 3) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 265,824 880,376 120,376 735,824" />
+<polygon fill="none" stroke="black" 
+        points="265,176 500,900 735,176 120,624 880,624" />
+
+<line fill="none" stroke="black" x1="500" y1="100" x2="500" y2="900" />
+<line fill="none" stroke="black" x1="265" y1="176" x2="735" y2="824" />
+<line fill="none" stroke="black" x1="120" y1="376" x2="880" y2="624" />
+<line fill="none" stroke="black" x1="120" y1="624" x2="880" y2="376" />
+<line fill="none" stroke="black" x1="265" y1="824" x2="735" y2="176" />
+
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="265" y2="176" />
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="120" y2="624" />
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="880" y2="624" />
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="735" y2="176" />
+
+</svg>

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 1000 1000"
+     xmlns="http://www.w3.org/2000/svg">
+
+<title>11</title>
+<desc></desc>
+
+<circle cx="500" cy="500" r="400" fill="none" stroke="black" />
+
+<!-- 11 -->
+<polygon fill="none" stroke="black" 
+        points="500,100 284,163 136,334 104,557 198,762 387,884 
+                613,884 802,762 896,557 864,334 716,163" />
+
+<!-- 11 star (skip 1) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 136,334 198,762 613,884 896,557 716,163
+                284,163 104,557 387,884 802,762 864,334" />
+
+<!-- 11 star (skip 2) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 104,557 613,884 864,334 284,163 198,762
+                802,762 716,163 136,334 387,884 896,557" />
+
+<!-- 11 star (skip 3) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 198,762 896,557 284,163 387,884 864,334
+                136,334 613,884 716,163 104,557 802,762" />
+
+<!-- 11 star (skip 4) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 387,884 716,163 198,762 864,334 104,557
+                896,557 136,334 802,762 284,163 613,884" />
+
+<!-- 
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="265" y2="176" />
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="120" y2="624" />
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="880" y2="624" />
+<line fill="none" stroke="red" stroke-width="4" 
+      x1="500" y1="100" x2="735" y2="176" /> -->
+
+</svg>

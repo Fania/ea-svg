@@ -26,6 +26,9 @@ https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/
 
 
 
+## Calculate polygon points
+https://www.mathopenref.com/coordpolycalc.html
+
 
 ## Rotating SVG
 

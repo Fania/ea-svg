@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1000 1000"
+     xmlns="http://www.w3.org/2000/svg">
+
+<title>Novile</title>
+<desc></desc>
+
+<circle cx="500" cy="500" r="400" fill="none" stroke="black" />
+
+<!-- 9 -->
+<polygon fill="none" stroke="black" 
+        points="500,100 243,194 106,431 154,700 363,876 
+                637,876 846,700 894,431 757,194" />
+
+<!-- 9 star (skip 1) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 106,431 363,876 846,700 757,194 
+                243,194 154,700 637,876 894,431" />
+
+<!-- 3 x 3 (skip 2) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 154,700 846,700" />
+<polygon fill="none" stroke="black" 
+        points="243,194 363,876 894,431" />
+<polygon fill="none" stroke="black" 
+        points="106,431 637,876 757,194" />
+
+<!-- 9 star (skip 3) -->
+<polygon fill="none" stroke="black" 
+        points="500,100 363,876 757,194 154,700 894,431
+                106,431 846,700 243,194 637,876" />
+
+<line fill="none" stroke="green" stroke-width="4" 
+      x1="500" y1="100" x2="243" y2="194" />
+<line fill="none" stroke="green" stroke-width="4" 
+      x1="500" y1="100" x2="106" y2="431" />
+<line fill="none" stroke="green" stroke-width="4" 
+      x1="500" y1="100" x2="363" y2="876" />
+<line fill="none" stroke="green" stroke-width="4" 
+      x1="500" y1="100" x2="637" y2="876" />
+<line fill="none" stroke="green" stroke-width="4" 
+      x1="500" y1="100" x2="894" y2="431" />
+<line fill="none" stroke="green" stroke-width="4" 
+      x1="500" y1="100" x2="757" y2="194" />
+
+</svg>
