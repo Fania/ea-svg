@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1000 1000"
+<svg viewBox="95 95 805 805"
      xmlns="http://www.w3.org/2000/svg">
 
 <title>Decile</title>
@@ -28,11 +28,11 @@
 <polygon fill="none" stroke="black" 
         points="265,176 500,900 735,176 120,624 880,624" />
 
-<line fill="none" stroke="black" x1="500" y1="100" x2="500" y2="900" />
+<!-- <line fill="none" stroke="black" x1="500" y1="100" x2="500" y2="900" />
 <line fill="none" stroke="black" x1="265" y1="176" x2="735" y2="824" />
 <line fill="none" stroke="black" x1="120" y1="376" x2="880" y2="624" />
 <line fill="none" stroke="black" x1="120" y1="624" x2="880" y2="376" />
-<line fill="none" stroke="black" x1="265" y1="824" x2="735" y2="176" />
+<line fill="none" stroke="black" x1="265" y1="824" x2="735" y2="176" /> -->
 
 <line fill="none" stroke="red" stroke-width="4" 
       x1="500" y1="100" x2="265" y2="176" />
