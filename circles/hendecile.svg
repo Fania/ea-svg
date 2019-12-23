@@ -1,7 +1,7 @@
-<svg viewBox="95 95 805 805"
+<svg viewBox="95 95 810 810"
      xmlns="http://www.w3.org/2000/svg">
 
-<title>11</title>
+<title>Hendecile</title>
 <desc></desc>
 
 <circle cx="500" cy="500" r="400" fill="none" stroke="black" />
@@ -31,14 +31,25 @@
         points="500,100 387,884 716,163 198,762 864,334 104,557
                 896,557 136,334 802,762 284,163 613,884" />
 
-<!-- 
-<line fill="none" stroke="red" stroke-width="4" 
-      x1="500" y1="100" x2="265" y2="176" />
-<line fill="none" stroke="red" stroke-width="4" 
-      x1="500" y1="100" x2="120" y2="624" />
-<line fill="none" stroke="red" stroke-width="4" 
-      x1="500" y1="100" x2="880" y2="624" />
-<line fill="none" stroke="red" stroke-width="4" 
-      x1="500" y1="100" x2="735" y2="176" /> -->
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="284" y2="163" />
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="136" y2="334" />
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="104" y2="557" />
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="198" y2="762" />
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="387" y2="884" />
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="613" y2="884" />
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="802" y2="762" />
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="896" y2="557" />
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="864" y2="334" />
+<line fill="none" stroke="blue" stroke-width="4" 
+      x1="500" y1="100" x2="716" y2="163" />
 
 </svg>
