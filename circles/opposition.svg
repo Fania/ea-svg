@@ -1,0 +1,11 @@
+<svg viewBox="95 95 810 810"
+     xmlns="http://www.w3.org/2000/svg">
+
+<title>Opposition</title>
+<desc></desc>
+
+<circle cx="500" cy="500" r="400" fill="none" stroke="black" />
+
+<line fill="none" stroke="blue" stroke-width="4" x1="500" y1="100" x2="500" y2="900" />
+
+</svg>

@@ -1,0 +1,11 @@
+<svg viewBox="95 95 810 810"
+     xmlns="http://www.w3.org/2000/svg">
+
+<title>Conjunction</title>
+<desc></desc>
+
+<circle cx="500" cy="500" r="400" fill="none" stroke="black" />
+
+<circle cx="500" cy="500" r="10" fill="red" stroke="red" />
+
+</svg>

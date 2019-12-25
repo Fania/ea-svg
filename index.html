@@ -7,6 +7,29 @@
   <!-- <link rel="stylesheet" href="hermetica.css"> -->
   <!-- <link rel="stylesheet" href="styles.css"> -->
   <base target="_parent">
+  <style>
+    object {
+      overflow: hidden;
+      height: auto;
+    }
+    #circles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    #circles object {
+      /* border: 1px solid black; */
+      max-height: 60vh;
+      width: 300px;
+    }
+    #rays {
+      display: flex;
+      justify-content: space-around;
+    }
+    #rays object {
+      width: 30%;
+    }
+  </style>
 </head>
 <body>
 
@@ -37,34 +60,11 @@
   set width to less than 600px for portrait mode (svg js kicks in)
   set width to larger than 600px for landscape mode 
 -->
-<style>
-  object {
-    overflow: hidden;
-    height: auto;
-  }
-  #circles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  #circles object {
-    /* border: 1px solid black; */
-    max-height: 60vh;
-    width: 300px;
-  }
-  #rays {
-    display: flex;
-    justify-content: space-around;
-  }
-  #rays object {
-    width: 30%;
-  }
-</style>
 
 
 <section id="circles">
-  <!-- <object type="image/svg+xml" data="circles/1.svg"></object> -->
-  <!-- <object type="image/svg+xml" data="circles/2.svg"></object> -->
+  <object type="image/svg+xml" data="circles/conjunction.svg"></object>
+  <object type="image/svg+xml" data="circles/opposition.svg"></object>
   <object type="image/svg+xml" data="circles/trine.svg"></object>
   <object type="image/svg+xml" data="circles/square.svg"></object>
   <object type="image/svg+xml" data="circles/quintile.svg"></object>
@@ -78,11 +78,11 @@
 </section>
 
 
-<section id="rays">
+<!-- <section id="rays">
   <object id="diagram" type="image/svg+xml" data="rays-V.svg"></object>
   <object id="diagram" type="image/svg+xml" data="non-sacreds-V.svg"></object>
   <object id="diagram" type="image/svg+xml" data="sacred-planets-V.svg"></object>
-</section>
+</section> -->
 
 <!-- 
 <object id="diagram" type="image/svg+xml" data="rays-H.svg"></object>
