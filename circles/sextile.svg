@@ -18,11 +18,11 @@
 
 <line fill="none" stroke="green" stroke-width="4" 
       x1="500" y1="100" x2="154" y2="300" />
-<line fill="none" stroke="green" stroke-width="4" 
-      x1="500" y1="100" x2="154" y2="700" />
+<!-- <line fill="none" stroke="green" stroke-width="4" 
+      x1="500" y1="100" x2="154" y2="700" /> -->
+<!-- <line fill="none" stroke="green" stroke-width="4" 
+      x1="500" y1="100" x2="846" y2="700" /> -->
 <line fill="none" stroke="green" stroke-width="4" 
       x1="500" y1="100" x2="846" y2="300" />
-<line fill="none" stroke="green" stroke-width="4" 
-      x1="500" y1="100" x2="846" y2="700" />
 
 </svg>
