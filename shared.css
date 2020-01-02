@@ -1,7 +1,7 @@
 :root {
-  --cardinal: rgb(204,0,0);
-  --fixed: rgb(102,102,255);
-  --mutable: rgb(0,153,0);
+  --cardinal: hsl(0, 100%, 40%);
+  --fixed: hsl(240, 100%, 70%);
+  --mutable: hsl(120, 100%, 30%)
 
   --ray1: #900;
   --ray2: #228;

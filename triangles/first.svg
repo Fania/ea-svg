@@ -1,0 +1,62 @@
+<svg viewBox="-10 -65 1020 930"
+     xmlns="http://www.w3.org/2000/svg">
+
+<title>Aries-Leo-Capricorn - Ray 1 - Triangle</title>
+<desc></desc>
+
+<style>
+@font-face {
+  font-family: "Astro";
+  src: url("../fonts/Astro.woff"), url("../fonts/Astro.ttf");
+}
+polygon, line, circle {
+  stroke: white;
+  stroke-width: 14px;
+}
+text {
+  font-family: "Astro";
+  font-size: 260px;
+  fill: white;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+a {
+  cursor: pointer;
+}
+.cardinal {
+  fill: hsl(0, 100%, 40%);
+}
+.fixed {
+  fill: hsl(240, 100%, 70%);
+}
+.mutable {
+  fill: hsl(120, 100%, 30%);
+}
+</style>
+
+
+<a href="/rays/ray1" target="_parent">
+  <polygon points="500,100 154,700 846,700" fill="url(#radial)" />
+  <line x1="500" y1="100" x2="500" y2="350"/>
+  <circle cx="500" cy="500" r="155" fill="none"/>
+  <text x="500" y="500">1</text>
+</a>
+<a href="/signs/aries/" target="_parent">
+  <circle class="cardinal" cx="500" cy="100" r="155"/>
+  <text x="500" y="100">a</text>
+</a>
+<a href="/signs/leo/" target="_parent">
+  <circle class="fixed" cx="846" cy="700" r="155"/>
+  <text x="846" y="700">e</text>
+</a>
+<a href="/signs/capricorn/" target="_parent">
+  <circle class="cardinal" cx="154" cy="700" r="155"/>
+  <text x="154" y="700">j</text>
+</a>
+
+<radialGradient id="radial" gradientUnits="userSpaceOnUse">
+  <stop offset="10%" stop-color="rgb(204,0,0)"/>
+  <stop offset="100%" stop-color="rgb(255,153,51)"/>
+</radialGradient>
+
+</svg>
